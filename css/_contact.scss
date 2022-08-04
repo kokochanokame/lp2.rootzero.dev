@@ -1,0 +1,218 @@
+.contact {
+  padding: vw($sp-width, 60) 0 vw($sp-width, 82);
+  @include mq(pc) {
+	padding: vw($pc-width, 60) 0 vw($pc-width, 82);
+  }
+  
+  &__wrapper {
+	@include mq(pc) {
+	  width: 63vw;
+	  margin: 0 auto;
+	}
+  }
+  
+  &__form {
+	margin-top: vw($sp-width, 47);
+	@include mq(pc) {
+	  margin-top: vw($pc-width, 38);
+	}
+  }
+  
+  &__group {
+	margin-top: vw($sp-width, 42);
+	@include mq(pc) {
+	  display: flex;
+	  flex-wrap: nowrap;
+	  align-items: flex-start;
+	  gap: vw($pc-width, 22);
+	  margin-top: vw($pc-width, 20);
+	}
+  }
+  
+  &__label-group {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	@include mq(pc) {
+	  gap: 0;
+	  justify-content: space-between;
+	  width: vw($pc-width, 208);
+	}
+  }
+  
+  &__label {
+	white-space: nowrap;
+	font-size: vw($sp-width, 26);
+	color: rgb(0, 0, 0);
+	font-weight: bold;
+	line-height: 1;
+	text-align: left;
+	@include mq(pc) {
+	  font-size: vw($pc-width, 18);
+	}
+  }
+  
+  &__required {
+	padding: 0 vw($sp-width, 14);
+	font-size: vw($sp-width, 24);
+	color: rgb(255, 113, 101);
+	font-weight: bold;
+	text-align: center;
+	border: 1px solid rgb(255, 113, 101);
+	border-radius: 4px;
+	line-height: 1.2;
+	@include mq(pc) {
+	  
+	  font-size: vw($pc-width, 15);
+	  padding: 0 vw($sp-width, 10);
+	}
+  }
+  
+  &__input {
+	cursor: pointer;
+	padding-left: vw($sp-width, 28);
+	margin-top: vw($sp-width, 15);
+	width: 100%;
+	height: vw($sp-width, 80);
+	border: 1px solid #e1e6ee;
+	border-radius: 6px;
+	background-color: #f1f3f5;
+	@include mq(pc) {
+	  margin-top: 0;
+	  padding-left: vw($pc-width, 18);
+	  width: vw($pc-width, 522);
+	  height: vw($pc-width, 44);
+	}
+	
+	&::placeholder {
+	  font-size: vw($sp-width, 26);
+	  color: rgba(0, 0, 0, 0.502);
+	  text-align: left;
+	  @include mq(pc) {
+		
+		font-size: vw($pc-width, 16);
+	  }
+	}
+  }
+  
+  &__label-check {
+	margin-bottom: vw($sp-width, 34);
+	@include mq(pc) {
+	  margin-bottom: 0;
+	}
+  }
+  
+  &__input-check {
+	margin-bottom: vw($sp-width, 20);
+	display: block;
+	font-size: vw($sp-width, 28);
+	color: rgb(0, 0, 0);
+	line-height: 1.714;
+	text-align: left;
+	@include mq(pc) {
+	  margin-bottom: 0;
+	  font-size: vw($pc-width, 18);
+	}
+  }
+  
+  &__check-group {
+	@include mq(pc) {
+	  margin-top: 1vw;
+	  display: flex;
+	  align-items: flex-start;
+	  gap: vw($pc-width, 158);
+	}
+  }
+  
+  &__check-box {
+	cursor: pointer;
+	margin-right: vw($sp-width, 24);
+	border: 1px solid #717171;
+	width: vw($sp-width, 35);
+	height: vw($sp-width, 35);
+	@include mq(pc) {
+	  margin-right: 0;
+	  width: vw($pc-width, 22);
+	  height: vw($pc-width, 22);
+	}
+  }
+  
+  &__input-textarea {
+	padding: vw($sp-width, 28);
+	cursor: pointer;
+	margin-top: vw($sp-width, 24);
+	width: 100%;
+	height: vw($sp-width, 237);
+	border: 1px solid #e1e6ee;
+	background-color: #f1f3f5;
+	border-radius: 6px;
+	@include mq(pc) {
+	  padding: vw($pc-width, 18);
+	  margin-top: 0vw;
+	  width: 70%;
+	  height: vw($pc-width, 167);
+	}
+	
+	&::placeholder {
+	  font-size: vw($sp-width, 26);
+	  color: rgba(0, 0, 0, 0.502);
+	  text-align: left;
+	  @include mq(pc) {
+		
+		font-size: vw($pc-width, 16);
+	  }
+	}
+  }
+  
+  &__policy {
+	font-size: vw($sp-width, 26);
+	color: rgb(0, 0, 0);
+	line-height: 1.154;
+	text-align: left;
+	@include mq(pc) {
+	  font-size: vw($pc-width, 18);
+	  margin-top: 1vw;
+	  margin-bottom: vw($pc-width, 57);
+	}
+  }
+  
+  &__policy-link {
+	cursor: pointer;
+	font-size: vw($sp-width, 26);
+	color: rgb(51, 176, 255);
+	line-height: 1.154;
+	text-align: left;
+	@include mq(pc) {
+	  font-size: vw($pc-width, 18);
+	}
+  }
+  
+  &__order {
+	margin-top: vw($sp-width, 70);
+	font-size: vw($sp-width, 34);
+	color: rgb(255, 255, 255);
+	font-weight: bold;
+	line-height: vw($sp-width, 90);
+	text-align: center;
+	border-radius: 45px;
+	background: linear-gradient(180deg, rgb(255, 113, 102) 1%, rgb(255, 150, 53) 99%);
+	width: vw($sp-width, 600);
+	height: vw($sp-width, 90);
+	@include mq(pc) {
+	  font-size: vw($pc-width, 22);
+	  width: 34vw;
+	  height: 5vw;
+	  line-height: 5vw;
+	}
+  }
+  
+  &__btn-box {
+	cursor: pointer;
+	@include mq(pc) {
+	  display: flex;
+	  flex-direction: column;
+	  align-items: center;
+	  margin: 0 auto;
+	}
+  }
+}

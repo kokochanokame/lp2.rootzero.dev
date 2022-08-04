@@ -1,0 +1,71 @@
+.about {
+  padding-bottom: vw($sp-width, 74);
+  background: url("/assets/img/sp-aboutbg2x.png") center no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include mq(pc) {
+	background: url("/assets/img/pc_avout_bg2x.png") center no-repeat;
+	background-size: contain;
+	padding-bottom: vw($pc-width, 80);
+  }
+  
+  &__title {
+	margin-top: 4vw;
+	margin-bottom: 1vw;
+  }
+  
+  &__sub-title {
+	white-space: nowrap;
+	display: inline-block;
+	font-size: vw($sp-width, 23);
+	color: rgb(0, 0, 0);
+	font-weight: bold;
+	line-height: 1.41;
+	text-align: center;
+	border-bottom: 1px solid rgb(255, 113, 101);
+	@include mq(pc) {
+		font-size: vw($pc-width, 28);
+	}
+  }
+  
+  &__text {
+	margin-top: vw($sp-width, 48);
+	font-size: vw($sp-width, 26);
+	color: rgb(0, 0, 0);
+	font-weight: normal;
+	line-height: 1.41;
+	text-align: center;
+	@include mq(pc) {
+	  margin-top: 2vw;
+	  font-size: vw($pc-width, 18);
+	  line-height: 1.71;
+	}
+  }
+  
+  &__your {
+	margin-top: vw($sp-width, 30);
+	font-size: vw($sp-width, 26);
+	color: rgb(0, 0, 0);
+	font-weight: normal;
+	line-height: 1.41;
+	text-align: center;
+	@include mq(pc) {
+	  margin-top: 	1vw;
+	  font-size: vw($pc-width, 18);
+	}
+  }
+  
+  &__point {
+	white-space: nowrap;
+	margin-top: vw($sp-width, 22);
+	font-weight: bold;
+	font-size: vw($sp-width, 40);
+	@include mq(pc) {
+	  margin-top: vw($pc-width, 22);
+	  font-size: vw($pc-width, 40);
+	  letter-spacing: 3px;
+	}
+  }
+}

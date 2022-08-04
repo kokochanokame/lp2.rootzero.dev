@@ -1,0 +1,332 @@
+.cva {
+  
+  padding-top: vw($sp-width, 60);
+  padding-bottom: vw($sp-width, 52);
+  width: 100%;
+  background: url(/assets/img/sp_sta.png) center no-repeat;
+  background-size: cover;
+  @include mq(pc) {
+	padding-top: 2.5vw;
+	padding-bottom: vw($pc-width, 38);
+	background: url(/assets/img/pc_cv_bk2x.jpg) right top no-repeat;
+	background-size: 113%;
+  }
+  
+  &__inner {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+  }
+  
+  &__pc-items {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	@include mq(pc) {
+	  flex-direction: row;
+	  gap: 6px;
+	}
+  }
+  
+  &__ac {
+	white-space: nowrap;
+	letter-spacing: -1.2px;
+	position: relative;
+	padding: 0 vw($sp-width, 40);
+	font-size: vw($sp-width, 28);
+	color: rgb(0, 0, 0);
+	font-weight: bold;
+	line-height: 2.679;
+	text-align: center;
+	@include mq(pc) {
+	  padding: 0 vw($pc-width, 36);
+	  font-size: vw($pc-width, 22);
+	}
+	
+	&::before {
+	  position: absolute;
+	  content: "";
+	  width: vw($sp-width, 40);
+	  height: vw($sp-width, 40);
+	  bottom: vw($sp-width, 12);
+	  left: 0;
+	  background: url("/assets/img/line_left.png") center no-repeat;
+	  background-size: contain;
+	  @include mq(pc) {
+		width: vw($pc-width, 26);
+		height: vw($pc-width, 33);
+		bottom: vw($pc-width, 4);
+	  }
+	}
+	
+	&::after {
+	  position: absolute;
+	  content: "";
+	  width: vw($sp-width, 40);
+	  height: vw($sp-width, 40);
+	  bottom: vw($sp-width, 12);
+	  right: 0;
+	  background: url("/assets/img/line_left.png") center no-repeat;
+	  background-size: contain;
+	  transform: rotateY(180deg);
+	  @include mq(pc) {
+		width: vw($pc-width, 26);
+		height: vw($pc-width, 33);
+		bottom: vw($pc-width, 4);
+	  }
+	}
+  }
+  
+  &__title {
+	font-size: vw($sp-width, 46);
+	color: rgb(255, 255, 255);
+	font-weight: bold;
+	line-height: 1.087;
+	text-align: center;
+	@include mq(pc) {
+	  margin-bottom: vw($pc-width, 16);
+		font-size: vw($pc-width, 40);
+	}
+  }
+  
+  &__items {
+	margin-top: vw($sp-width, 24);
+	display: flex;
+	align-items: center;
+	gap: vw($sp-width, 10);
+	@include mq(pc) {
+	  margin-top: 0;
+	}
+  }
+  
+  &__item {
+	margin-top: vw($sp-width, 12);
+	padding: vw($sp-width, 8) vw($sp-width, 24);
+	display: inline-block;
+	font-size: vw($sp-width, 26);
+	color: rgb(255, 255, 255);
+	font-weight: bold;
+	text-align: center;
+	border-radius: 30px;
+	border: 2px solid rgb(255, 255, 255);
+	@include mq(pc) {
+	  margin-top: 0;
+	  padding: vw($sp-width, 2) 1.5vw;
+		font-size: vw($pc-width, 18);
+	}
+  }
+  
+  &__text {
+	margin-top: vw($sp-width, 30);
+	font-size: vw($sp-width, 26);
+	color: rgb(0, 0, 0);
+	line-height: 1.385;
+	text-align: center;
+	@include mq(pc) {
+	  margin-top: vw($pc-width, 16);
+	  padding: vw($sp-width, 2) vw($sp-width, 27);
+	  font-size: vw($pc-width, 18);
+		line-height: 1.444;
+		text-align: center;
+	}
+  }
+  
+  &__free {
+	
+  }
+  
+  &__contact {
+	@include mq(pc) {
+	  margin-top: 2vw;
+	  display: flex;
+	  flex-wrap: nowrap;
+	  align-items: center;
+	  gap: vw($pc-width, 16);
+	  
+	}
+  }
+  
+  &__free-link {
+	white-space: nowrap;
+	box-sizing: content-box;
+	margin-top: vw($sp-width, 65);
+	width: vw($sp-width, 630);
+	height: vw($sp-width, 80);
+	position: relative;
+	border-radius: 50px;
+	border: solid 5px rgb(255, 215, 196);
+	background: #fff;
+	display: inline-block;
+	font-size: vw($sp-width, 34);
+	line-height: vw($sp-width, 80);
+	text-align: center;
+	color: rgb(0, 0, 0);
+	font-weight: bold;
+	@include mq(pc) {
+	  border-radius: vw($pc-width, 38);
+	  margin-top:0;
+	  width: vw($pc-width, 480);
+	  height: vw($pc-width, 76);
+	  font-size: vw($pc-width, 26);
+	  line-height: vw($pc-width, 76);
+	}
+  }
+  
+  &__free-arrow {
+	position: absolute;
+	right: vw($sp-width, 55);
+	top: -30%;
+	width: vw($sp-width, 20);
+	height: vw($sp-width, 20);
+	@include mq(pc) {
+	  right: vw($pc-width, 40);
+	  top: -40%;
+	  width: vw($pc-width, 11);
+	  height: vw($pc-width, 17);
+	}
+  }
+  
+  &__line-link {
+	margin-top: vw($sp-width, 74);
+	width: vw($sp-width, 630);
+	height: vw($sp-width, 80);
+	padding: 0 vw($sp-width, 142) 0 vw($sp-width, 152);
+	display: inline-block;
+	position: relative;
+	background-color: #00b900;
+	border-radius: 50px;
+	@include mq(pc) {
+	  margin-top: 0;
+	  padding: 0 vw($pc-width, 108) 0 vw($pc-width, 30);
+	  width: vw($pc-width, 480);
+	  height: vw($pc-width, 76);
+	  font-size: vw($pc-width, 26);
+	  line-height: vw($pc-width, 76);
+	  border-radius: vw($pc-width, 38);
+	}
+	
+	&::before {
+	  content: '';
+	  position: absolute;
+	  width: vw($sp-width, 451);
+	  height: vw($sp-width, 45);
+	  background-image: url(/assets/img/more@2x.png);
+	  background-size: contain;
+	  background-repeat: no-repeat;
+	  background-position: center;
+	  left: 50%;
+	  transform: translateX(-50%);
+	  top: vw($sp-width, -45);
+	  @include mq(pc) {
+		width: vw($pc-width, 317);
+		height: vw($pc-width, 20);
+		top: vw($pc-width, -30);
+	  }
+	}
+	
+  }
+  
+  
+  &__line-icon {
+	position: absolute;
+	left: vw($sp-width, 65);
+	width: vw($sp-width, 63);
+	height: vw($sp-width, 63);
+	top: 40%;
+	transform: translateY(-50%);
+	@include mq(pc) {
+	  left: vw($pc-width, 34);
+	  width: vw($pc-width, 50);
+	  height: vw($pc-width, 50);
+	  top: 15%;
+	}
+  }
+  
+  &__line-arrow {
+	position: absolute;
+	right: vw($sp-width, 55);
+	top: 40%;
+	transform: translateY(-50%);
+	width: vw($sp-width, 20);
+	height: vw($sp-width, 20);
+	@include mq(pc) {
+	  right: vw($pc-width, 40);
+	  width: vw($pc-width, 11);
+	  height: vw($pc-width, 17);
+	  top: -29%;
+	}
+  }
+  
+  &__line-center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	
+  }
+  
+  &__line-top {
+	white-space: nowrap;
+	padding: 0 vw($sp-width, 62);
+	position: relative;
+	font-size: vw($sp-width, 24);
+	color: rgb(253, 238, 158);
+	font-weight: bold;
+	text-align: center;
+	@include mq(pc) {
+	  line-height: 0.6;
+	  padding: 0 vw($pc-width, 50);
+	  font-size: vw($pc-width, 18);
+	}
+	
+	&::before {
+	  content: "";
+	  position: absolute;
+	  width: vw($sp-width, 50);
+	  height: 1px;
+	  background-color: rgb(253, 238, 158);
+	  left: 0;
+	  top: 50%;
+	  transform: translateY(-50%);
+	  @include mq(pc) {
+		width: vw($sp-width, 30);
+	  }
+	}
+	
+	&::after {
+	  content: "";
+	  position: absolute;
+	  width: vw($sp-width, 50);
+	  height: 1px;
+	  background-color: rgb(253, 238, 158);
+	  right: 0;
+	  top: 50%;
+	  transform: translateY(-50%);
+	  @include mq(pc) {
+		width: vw($sp-width, 30);
+	  }
+	}
+  }
+  
+  &__line-bottom {
+	white-space: nowrap;
+	font-size: vw($sp-width, 26);
+	color: rgb(0, 0, 0);
+	font-weight: bold;
+	text-align: center;
+	@include mq(pc) {
+	  font-size: vw($pc-width, 26);
+	  line-height: 1.5;
+	}
+  }
+  
+  
+}
+
+.line-ac {
+  color: #fff;
+}
