@@ -21,8 +21,15 @@
 	  padding: vw($pc-width, 69) vw($pc-width, 38) vw($pc-width, 50) 0;
 	  width: 50%;
 	}
+	@include mq(lpc) {
+	  align-items: end;
+	  padding: 69px 38px 50px 0;
+	  width: 50%;
+	}
+
 	
 	&__main {
+	  white-space: nowrap;
 	  padding: vw($sp-width, 7) vw($sp-width, 32);
 	  display: inline-block;
 	  font-size: vw($sp-width, 22);
@@ -38,6 +45,12 @@
 		padding: vw($pc-width, 3) vw($pc-width, 22);
 		font-size: vw($pc-width, 22);
 	  }
+	  @include mq(lpc) {
+		margin-right: 108px;
+		margin-bottom: 12px;
+		padding:  3px 22px;
+		font-size:  22px;
+	  }
 	}
 	
 	&__main-img {
@@ -48,6 +61,12 @@
 		margin-left: auto;
 		width: 24vw;
 		height: vw($pc-width, 270);
+	  }
+	  @include mq(lpc) {
+		padding-top: 18px;
+		margin-left: auto;
+		width: 288px;
+		height: 270px;
 	  }
 	}
   }
@@ -65,10 +84,13 @@
 	  margin-top: -2.833333vw;;
 	  font-size: vw($pc-width, 20);
 	}
+	@include mq(lpc) {
+	  margin-top: -32px;
+	  font-size: 20px;
+	}
   }
   
   &__card-dev {
-	
 	position: relative;
 	padding-right: 10px;
 	@include mq(pc){
@@ -95,15 +117,19 @@
 	  width: 50%;
 	  align-items: start;
 	}
-	
+	@include mq(lpc) {
+	  padding:  69px 0  50px  38px;
+	}
+
 	&__card-another {
+	  
 	  @include mq(pc){
 		text-align: left;
 	  }
-	 
 	}
 	
 	&__another {
+	  white-space: nowrap;
 	  padding: vw($sp-width, 7) vw($sp-width, 32);
 	  font-size: vw($sp-width, 22);
 	  display: inline-block;
@@ -119,6 +145,12 @@
 		padding: vw($pc-width, 3) vw($pc-width, 22);
 		font-size: vw($pc-width, 20);
 	  }
+	  @include mq(lpc) {
+		margin-right: 204px;
+		margin-bottom: 12px;
+		padding:  3px  22px;
+		font-size:  20px;
+	  }
 	}
 	
 	&__another-img {
@@ -128,6 +160,11 @@
 		margin-right: auto;
 		width: 24vw;
 		height: vw($pc-width, 270);
+	  }
+	  @include mq(lpc) {
+		margin-right: auto;
+		width: 288px;
+		height:  270px;
 	  }
 	}
   }

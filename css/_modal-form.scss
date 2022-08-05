@@ -30,6 +30,10 @@
 	  width: vw($pc-width, 680);
 	  height: vw($pc-width, 615);
 	}
+	@include mq(lpc) {
+	  width:  680px;
+	  height:  615px;
+	}
   }
   &__open-btn {
 	position: absolute;
@@ -53,6 +57,9 @@
 	@include mq(pc) {
 	  width: vw($pc-width, 523);
 	}
+	@include mq(lpc) {
+	  width: 523px;
+	}
   }
   
   &__title {
@@ -62,7 +69,9 @@
 	text-align: center;
 	@include mq(pc) {
 	  font-size: vw($pc-width, 36);
-	
+	}
+	@include mq(lpc) {
+	  font-size: 36px;
 	}
   }
   
@@ -76,6 +85,9 @@
 	line-height: 1.2;
 	@include mq(pc) {
 	  font-size: vw($pc-width, 26);
+	}
+	@include mq(lpc) {
+	  font-size: 26px;
 	}
   }
   &__btn-box.contact__btn-box {
@@ -92,6 +104,10 @@
 	  width: vw($pc-width, 390);
 	  height: vw($pc-width, 60);
 	}
+	@include mq(lpc) {
+	  width: 390px;
+	  height: 60px;
+	}
   }
   
   &__btn.contact__btn {
@@ -101,6 +117,9 @@
 	}
 	@include mq(pc) {
 	  line-height: vw($pc-width, 60);
+	}
+	@include mq(lpc) {
+	  line-height: 60px;
 	}
 	
   }
@@ -118,7 +137,9 @@
 	}
 	@include mq(pc) {
 	margin: vw($pc-width, 20) 0 vw($pc-width, 30);
-	
+	}
+	@include mq(lpc) {
+	  margin: 20px 0 30px;
 	}
   }
   
@@ -134,6 +155,9 @@
   &__check-group.contact__check-group{
 	@include mq(pc) {
 	  height: 2vw;
+	}
+	@include mq(pc) {
+	  height: 24px;
 	}
   }
 }

@@ -6,9 +6,10 @@
   @include mq(pc) {
 	padding: vw($pc-width, 68) 0 9vw;
 	background: url("/assets/img/pc_avout_bg2.png") center no-repeat;
-	
   }
-  
+  @include mq(lpc) {
+	padding: 68px 0 108px;
+  }
   &__container {
 	display: flex;
 	flex-direction: column;
@@ -29,7 +30,7 @@
 	  top: 7vw;
 	  right: -15px;
 	  @include mq(pc) {
-		top: 0vw;
+		top: 0;
 		right: -15px;
 	  }
 	}
@@ -37,6 +38,9 @@
 	  font-size: vw($pc-width, 26);
 	  line-height: 1.385;
 	  text-align: center;
+	}
+	@include mq(lpc) {
+	  font-size: 26px;
 	}
   }
   
@@ -51,6 +55,10 @@
 	  margin-top: 2vw;
 	  font-size: vw($pc-width, 18);
 	  line-height: 1.556;
+	}
+	@include mq(lpc) {
+	  margin-top: 24px;
+	  font-size: 18px;
 	}
   }
   
@@ -67,6 +75,11 @@
 	  margin-bottom: vw($pc-width, 20);
 	  font-size: vw($pc-width, 18);
 	}
+	@include mq(lpc) {
+	  margin-top: 54px;
+	  margin-bottom: 20px;
+	  font-size: 18px;
+	}
   }
   
   &__title-sub {
@@ -74,9 +87,13 @@
 	color: rgb(0, 0, 0);
 	line-height: 1.25;
 	text-align: center;
+	font-weight: bold;
 	@include mq(pc) {
 	  font-size: vw($pc-width, 26);
 	}
+	@include mq(lpc) {
+	   font-size: 26px;
+	 }
   }
   
   &__title {
@@ -84,14 +101,18 @@
 	white-space: nowrap;
 	padding: 0 vw($sp-width, 75);
 	font-size: vw($sp-width, 46);
-	font-weight: normal;
 	color: rgb(0, 0, 0);
 	line-height: 1.25;
 	text-align: center;
 	position: relative;
+	font-weight: bold;
 	@include mq(pc) {
 	  font-size: vw($pc-width, 40);
 	  padding: 0 vw($pc-width, 65)
+	}
+	@include mq(lpc) {
+	  font-size: 40px;
+	  padding: 65px;
 	}
 	
 	&::before {
@@ -106,6 +127,10 @@
 	  @include mq(pc) {
 		width: vw($pc-width, 75);
 		height: vw($pc-width, 90);
+	  }
+	  @include mq(lpc) {
+		width: 75px;
+		height: 90px;
 	  }
 	}
 	
@@ -122,6 +147,10 @@
 		width: vw($pc-width, 75);
 		height: vw($pc-width, 90);
 	  }
+	  @include mq(lpc) {
+		width: 75px;
+		height: 90px;
+	  }
 	}
   }
   
@@ -133,6 +162,9 @@
 	line-height: 1.25;
 	@include mq(pc) {
 	  font-size: vw($pc-width, 16);
+	}
+	@include mq(lpc) {
+	  font-size: 16px;
 	}
   }
   
@@ -162,6 +194,14 @@
 		line-height: 1.636;
 		text-align: center;
 	}
+	@include mq(lpc) {
+	  margin-top: 47px;
+	  margin-bottom: 16px;
+	  padding: 0 2.5vw;
+	  font-size: 22px;
+	  line-height: 1.636;
+	  text-align: center;
+	}
   }
   
   &__video-play {
@@ -171,6 +211,10 @@
 	@include mq(pc) {
 	  width: vw($pc-width, 796);
 	  height: vw($pc-width, 452);
+	}
+	@include mq(lpc) {
+	  width: 796px;
+	  height: 452px;
 	}
   }
 }

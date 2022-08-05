@@ -1,5 +1,4 @@
 .cva {
-  
   padding-top: vw($sp-width, 60);
   padding-bottom: vw($sp-width, 52);
   width: 100%;
@@ -8,6 +7,12 @@
   @include mq(pc) {
 	padding-top: 2.5vw;
 	padding-bottom: vw($pc-width, 38);
+	background: url(/assets/img/pc_cv_bk2x.jpg) right top no-repeat;
+	background-size: 113%;
+  }
+  @include mq(lpc) {
+	padding-top: 30px;
+	padding-bottom: 38px;
 	background: url(/assets/img/pc_cv_bk2x.jpg) right top no-repeat;
 	background-size: 113%;
   }
@@ -42,6 +47,10 @@
 	  padding: 0 vw($pc-width, 36);
 	  font-size: vw($pc-width, 22);
 	}
+	@include mq(lpc) {
+	  padding: 0 36px;
+	  font-size: 22px;
+	}
 	
 	&::before {
 	  position: absolute;
@@ -56,6 +65,11 @@
 		width: vw($pc-width, 26);
 		height: vw($pc-width, 33);
 		bottom: vw($pc-width, 4);
+	  }
+	  @include mq(lpc) {
+		width: 26px;
+		height: 33px;
+		bottom: 4px;
 	  }
 	}
 	
@@ -74,6 +88,11 @@
 		height: vw($pc-width, 33);
 		bottom: vw($pc-width, 4);
 	  }
+	  @include mq(lpc) {
+		width: 26px;
+		height: 33px;
+		bottom: 4px;
+	  }
 	}
   }
   
@@ -85,7 +104,11 @@
 	text-align: center;
 	@include mq(pc) {
 	  margin-bottom: vw($pc-width, 16);
-		font-size: vw($pc-width, 40);
+	  font-size: vw($pc-width, 40);
+	}
+	@include mq(lpc) {
+	  margin-bottom: 16px;
+	  font-size: 40px;
 	}
   }
   
@@ -100,6 +123,7 @@
   }
   
   &__item {
+	white-space: nowrap;
 	margin-top: vw($sp-width, 12);
 	padding: vw($sp-width, 8) vw($sp-width, 24);
 	display: inline-block;
@@ -112,7 +136,11 @@
 	@include mq(pc) {
 	  margin-top: 0;
 	  padding: vw($sp-width, 2) 1.5vw;
-		font-size: vw($pc-width, 18);
+	  font-size: vw($pc-width, 18);
+	}
+	@include mq(lpc) {
+	  padding:  2px 18px;
+	  font-size: 18px;
 	}
   }
   
@@ -126,8 +154,13 @@
 	  margin-top: vw($pc-width, 16);
 	  padding: vw($sp-width, 2) vw($sp-width, 27);
 	  font-size: vw($pc-width, 18);
-		line-height: 1.444;
-		text-align: center;
+	  line-height: 1.444;
+	  text-align: center;
+	}
+	@include mq(pc) {
+	  margin-top: 16px;
+	  padding: 2px 27px;
+	  font-size: 18px;
 	}
   }
   
@@ -142,7 +175,10 @@
 	  flex-wrap: nowrap;
 	  align-items: center;
 	  gap: vw($pc-width, 16);
-	  
+	}
+	@include mq(lpc) {
+	  margin-top: 24px;
+	  gap: 16px;
 	}
   }
   
@@ -164,11 +200,19 @@
 	font-weight: bold;
 	@include mq(pc) {
 	  border-radius: vw($pc-width, 38);
-	  margin-top:0;
+	  margin-top: 0;
 	  width: vw($pc-width, 480);
 	  height: vw($pc-width, 76);
 	  font-size: vw($pc-width, 26);
 	  line-height: vw($pc-width, 76);
+	}
+	@include mq(lpc) {
+	  border-radius: 38px;
+	  margin-top: 0;
+	  width: 480px;
+	  height: 76px;
+	  font-size: 26px;
+	  line-height: 76px;
 	}
   }
   
@@ -183,6 +227,12 @@
 	  top: -40%;
 	  width: vw($pc-width, 11);
 	  height: vw($pc-width, 17);
+	}
+	@include mq(lpc) {
+	  right: 40px;
+	  top: -40%;
+	  width:  11px;
+	  height: 17px;
 	}
   }
   
@@ -204,6 +254,15 @@
 	  line-height: vw($pc-width, 76);
 	  border-radius: vw($pc-width, 38);
 	}
+	@include mq(lpc) {
+	  margin-top: 0;
+	  padding: 0 108px 0 30px;
+	  width: 480px;
+	  height: 76px;
+	  font-size: 26px;
+	  line-height: 76px;
+	  border-radius: 38px;
+	}
 	
 	&::before {
 	  content: '';
@@ -221,6 +280,11 @@
 		width: vw($pc-width, 317);
 		height: vw($pc-width, 20);
 		top: vw($pc-width, -30);
+	  }
+	  @include mq(lpc) {
+		width: 317px;
+		height: 20px;
+		top: -30px;
 	  }
 	}
 	
@@ -240,6 +304,12 @@
 	  height: vw($pc-width, 50);
 	  top: 15%;
 	}
+	@include mq(lpc) {
+	  left: 34px;
+	  width: 50px;
+	  height: 50px;
+	  top: 15%;
+	}
   }
   
   &__line-arrow {
@@ -253,6 +323,12 @@
 	  right: vw($pc-width, 40);
 	  width: vw($pc-width, 11);
 	  height: vw($pc-width, 17);
+	  top: -29%;
+	}
+	@include mq(lpc) {
+	  right: 40px;
+	  width: 11px;
+	  height: 17px;
 	  top: -29%;
 	}
   }
@@ -282,6 +358,11 @@
 	  padding: 0 vw($pc-width, 50);
 	  font-size: vw($pc-width, 18);
 	}
+	@include mq(lpc) {
+	  line-height: 0.6;
+	  padding: 0 50px;
+	  font-size: 18px;
+	}
 	
 	&::before {
 	  content: "";
@@ -294,6 +375,9 @@
 	  transform: translateY(-50%);
 	  @include mq(pc) {
 		width: vw($sp-width, 30);
+	  }
+	  @include mq(lpc) {
+		width: 30px;
 	  }
 	}
 	
@@ -309,6 +393,9 @@
 	  @include mq(pc) {
 		width: vw($sp-width, 30);
 	  }
+	  @include mq(lpc) {
+		width: 30px;
+	  }
 	}
   }
   
@@ -322,9 +409,10 @@
 	  font-size: vw($pc-width, 26);
 	  line-height: 1.5;
 	}
+	@include mq(lpc) {
+	  font-size: 26px;
+	}
   }
-  
-  
 }
 
 .line-ac {

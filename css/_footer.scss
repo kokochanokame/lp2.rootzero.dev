@@ -7,6 +7,10 @@
     padding: vw($sp-width, 47) 0 vw($sp-width, 40);
   
   }
+  @include mq(lpc) {
+	padding: 47px 0 40px;
+	
+  }
   
   &__logo {
 	width: vw($sp-width, 231);
@@ -15,6 +19,10 @@
       width: vw($pc-width, 231);
       height: vw($pc-width, 70);
     }
+	@include mq(lpc) {
+	  width: 231px;
+	  height: 70px;
+	}
   }
   
   &__list {
@@ -27,6 +35,13 @@
       align-items: center;
       gap: vw($pc-width, 20);
     }
+	@include mq(lpc) {
+	  margin-top:  25px;
+	  margin-bottom:  70px;
+	  display: flex;
+	  align-items: center;
+	  gap:  20px;
+	}
   }
   
   &__list-item {
@@ -37,6 +52,9 @@
 	@include mq(pc) {
 	  font-size: vw($pc-width, 16);
 	}
+	@include mq(lpc) {
+	  font-size: 16px;
+	}
   }
   
   &__attention {
@@ -46,6 +64,9 @@
 	text-align: left;
 	@include mq(pc) {
 	  font-size: vw($pc-width, 16);
+	}
+	@include mq(lpc) {
+	  font-size: 16px;
 	}
   }
   
@@ -60,6 +81,11 @@
 	  margin-bottom: vw($sp-width, 15);
 	  gap: vw($pc-width, 20);
 	}
+	@include mq(lpc) {
+	  margin-top:  51px;
+	  margin-bottom:  15px;
+	  gap:  20px;
+	}
   }
   
   &__sns-img {
@@ -68,6 +94,10 @@
 	@include mq(pc) {
 	  width: vw($pc-width, 35);
 	  height: vw($pc-width, 35);
+	}
+	@include mq(lpc) {
+	  width: 35px;
+	  height: 35px;
 	}
   }
   
@@ -79,6 +109,9 @@
 	text-align: center;
 	@include mq(pc) {
 	  font-size: vw($pc-width, 14);
+	}
+	@include mq(lpc) {
+	  font-size: 14px;
 	}
   }
 }

@@ -8,12 +8,12 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <!-- <link rel="stylesheet" href="assets/css/ress.css"> -->
 
-<link rel="stylesheet" href="https://unpkg.com/destyle.css@3.0.2/destyle.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/destyle.css@3.0.2/destyle.min.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/css/modaal.min.css">
-   <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@700&display=swap" rel="stylesheet">
@@ -22,11 +22,14 @@
 <body>
 
 <header class="header">
-    <div class="header__inner">
+    <div class="header__inner content">
         <figure class="header__logo"><img src="assets/img/header_logo@2x.png" alt=""></figure>
         <ul class="header__items">
             <li class="header__item"><a href="#contact" class="header__link--small">資料請求</a></li>
-            <li class="header_item"><button data-micromodal-trigger="modal-4" href="#" class="modal-open header__link--large">無料カウンセリング</button></li>
+            <li class="header_item">
+                <button data-micromodal-trigger="modal-4" href="#" class="modal-open header__link--large">無料カウンセリング
+                </button>
+            </li>
         </ul>
     </div>
     <!--モーダル-->
@@ -66,7 +69,7 @@
 
                                     <div class="contact__group modal-form__group">
 
-                                        <label  class="contact__label">
+                                        <label class="contact__label">
 
                                             <input type="text" class="contact__input modal__input" name="tel"
                                                    placeholder="電話番号"></label>
@@ -87,14 +90,14 @@
                                     </div>
 
 
-
                                     <div class="contact__group modal-form__group">
                                         <div class="contact__check-group modal-form__check-group">
-                                            <label class="contact__policy modal-form__policy"><input type="checkbox" class="contact__check-box"><a
-                                                    class="contact__policy-link" href="/">利用規約</a>と<a class="contact__policy-link" href="/">プライバシーポリシー</a>に同意する</label>
+                                            <label class="contact__policy modal-form__policy"><input type="checkbox"
+                                                                                                     class="contact__check-box"><a
+                                                    class="contact__policy-link" href="/">利用規約</a>と<a
+                                                    class="contact__policy-link" href="/">プライバシーポリシー</a>に同意する</label>
                                         </div>
                                     </div>
-
 
 
                                     <div class="contact__order contact__btn-box modal-form__btn-box">
@@ -131,206 +134,211 @@
     </div>
 </section>
 <section class="about">
-<div class="banner container">
-    <p class="banner__top">8月限定特典</p>
-    <h3 class="banner__main-description">
-        1ヶ月無料体験キャンペーン実施中
-    </h3>
-    <p class="banner__sub">
-        1ヶ月以内のキャンセルであれば受講費用は一切かかりません
-    </p>
-    <button data-micromodal-trigger="modal-6" class="banner__btn modal-open">キャンペーンの応募はこちら！</button>
-</div>
+    <div class="content">
+        <div class="about__content">
+            <div class="banner container">
+                <p class="banner__top">8月限定特典</p>
+                <h3 class="banner__main-description">
+                    1ヶ月無料体験キャンペーン実施中
+                </h3>
+                <p class="banner__sub">
+                    1ヶ月以内のキャンセルであれば受講費用は一切かかりません
+                </p>
+                <button data-micromodal-trigger="modal-6" class="banner__btn modal-open">キャンペーンの応募はこちら！</button>
+            </div>
 
-    <!--モーダル-->
-    <div class="modal micromodal-slide" id="modal-6" aria-hidden="true">
-        <div class="modal-overlay" tabindex="-1" data-micromodal-close>
-            <div
-                    class="modal-container"
-                    role="dialog"
-                    aria-modal="true"
-                    aria-labelledby="modal-1-title"
-            >
-                <header class="modal-header">
-                    <h2 class="modal-title" id="modal-6-title"></h2>
-                    <button
-                            class="modal-close"
-                            aria-label="Close modal"
-                            data-micromodal-close
-                    ></button>
-                </header>
-                <div class="modal-content" id="modal-6-content">
-                    <!-- カウンセリングに参加する-->
-                    <div class="contact modal-form__container">
+            <!--モーダル-->
+            <div class="modal micromodal-slide" id="modal-6" aria-hidden="true">
+                <div class="modal-overlay" tabindex="-1" data-micromodal-close>
+                    <div
+                            class="modal-container"
+                            role="dialog"
+                            aria-modal="true"
+                            aria-labelledby="modal-1-title"
+                    >
+                        <header class="modal-header">
+                            <h2 class="modal-title" id="modal-6-title"></h2>
+                            <button
+                                    class="modal-close"
+                                    aria-label="Close modal"
+                                    data-micromodal-close
+                            ></button>
+                        </header>
+                        <div class="modal-content" id="modal-6-content">
+                            <!-- カウンセリングに参加する-->
+                            <div class="contact modal-form__container">
 
-                        <h2 class="modal-form__title">無料カウンセリングに参加する！</h2>
-                        <p class="modal-form__sub-title"> COUNSELING</p>
+                                <h2 class="modal-form__title">無料カウンセリングに参加する！</h2>
+                                <p class="modal-form__sub-title"> COUNSELING</p>
 
-                        <div class="modal-form__inner">
-                            <form action="" method="post">
-                                <div class="contact__form modal-form__wrapper">
-                                    <div class="contact__group modal-form__group">
-                                        <label class="contact__label">
-                                            <input type="text" class="contact__input modal__input" name="username"
-                                                   placeholder="お名前">
-                                        </label>
-                                    </div>
-
-
-                                    <div class="contact__group modal-form__group">
-
-                                        <label  class="contact__label">
-
-                                            <input type="text" class="contact__input modal__input" name="tel"
-                                                   placeholder="電話番号"></label>
-                                    </div>
-
-                                    <div class="contact__group modal-form__group">
-                                        <label class="contact__label">
-                                            <input type="text" class="contact__input modal__input" name="email"
-                                                   placeholder="メールアドレス">
-                                        </label>
-                                    </div>
-
-                                    <div class="contact__group modal-form__group">
-                                        <label class="contact__label">
-                                            <input type="text" class="contact__input modal__input" name="email"
-                                                   placeholder="メールアドレス確認">
-                                        </label>
-                                    </div>
+                                <div class="modal-form__inner">
+                                    <form action="" method="post">
+                                        <div class="contact__form modal-form__wrapper">
+                                            <div class="contact__group modal-form__group">
+                                                <label class="contact__label">
+                                                    <input type="text" class="contact__input modal__input"
+                                                           name="username"
+                                                           placeholder="お名前">
+                                                </label>
+                                            </div>
 
 
+                                            <div class="contact__group modal-form__group">
 
-                                    <div class="contact__group modal-form__group">
-                                        <div class="contact__check-group modal-form__check-group">
-                                            <label class="contact__policy modal-form__policy"><input type="checkbox" class="contact__check-box"><a
-                                                    class="contact__policy-link" href="/">利用規約</a>と<a class="contact__policy-link" href="/">プライバシーポリシー</a>に同意する</label>
+                                                <label class="contact__label">
+
+                                                    <input type="text" class="contact__input modal__input" name="tel"
+                                                           placeholder="電話番号"></label>
+                                            </div>
+
+                                            <div class="contact__group modal-form__group">
+                                                <label class="contact__label">
+                                                    <input type="text" class="contact__input modal__input" name="email"
+                                                           placeholder="メールアドレス">
+                                                </label>
+                                            </div>
+
+                                            <div class="contact__group modal-form__group">
+                                                <label class="contact__label">
+                                                    <input type="text" class="contact__input modal__input" name="email"
+                                                           placeholder="メールアドレス確認">
+                                                </label>
+                                            </div>
+
+
+                                            <div class="contact__group modal-form__group">
+                                                <div class="contact__check-group modal-form__check-group">
+                                                    <label class="contact__policy modal-form__policy"><input
+                                                            type="checkbox"
+                                                            class="contact__check-box"><a
+                                                            class="contact__policy-link" href="/">利用規約</a>と<a
+                                                            class="contact__policy-link"
+                                                            href="/">プライバシーポリシー</a>に同意する</label>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="contact__order contact__btn-box modal-form__btn-box">
+                                                <div class="contact__error"></div>
+                                                <button class="contact__btn modal-form__btn ">送信する</button>
+                                            </div>
                                         </div>
-                                    </div>
-
-
-
-                                    <div class="contact__order contact__btn-box modal-form__btn-box">
-                                        <div class="contact__error"></div>
-                                        <button class="contact__btn modal-form__btn ">送信する</button>
-                                    </div>
+                                    </form>
                                 </div>
-                            </form>
+                            </div>
+
+                            <!-- /.modal-text -->
                         </div>
                     </div>
-
-                    <!-- /.modal-text -->
                 </div>
             </div>
-        </div>
-    </div>
 
 
+            <!--モーダル-->
+
+            <!-- 開くボタン -->
+            <button data-micromodal-trigger="inline" class="modaal">
+            </button>
+
+            <div class="modal micromodal-slide" id="inline" aria-hidden="true">
+                <div class="modal-overlay" tabindex="-1" data-micromodal-close>
+                    <div
+                            class="modal-container"
+                            role="dialog"
+                            aria-modal="true"
+                            aria-labelledby="inline"
+                    >
+                        <header class="modal-header">
+                            <h2 class="modal-title" id="inline-title"></h2>
+                            <button
+                                    class="modal-close"
+                                    aria-label="Close modal"
+                                    data-micromodal-close
+                            ></button>
+                        </header>
+                        <div class="modal-content" id="inline-content">
+                            <!-- カウンセリングに参加する-->
+                            <div class="contact modal-form__container">
+
+                                <h2 class="modal-form__title">無料カウンセリングに参加する！</h2>
+                                <p class="modal-form__sub-title"> COUNSELING</p>
+
+                                <div class="modal-form__inner">
+                                    <form action="" method="post">
+                                        <div class="contact__form modal-form__wrapper">
+                                            <div class="contact__group modal-form__group">
+                                                <label class="contact__label">
+                                                    <input type="text" class="contact__input modal__input"
+                                                           name="username"
+                                                           placeholder="お名前">
+                                                </label>
+                                            </div>
 
 
+                                            <div class="contact__group modal-form__group">
 
-    <!--モーダル-->
+                                                <label class="contact__label">
 
-    <!-- 開くボタン -->
-    <button data-micromodal-trigger="inline" class="modaal">
-    </button>
+                                                    <input type="text" class="contact__input modal__input" name="tel"
+                                                           placeholder="電話番号"></label>
+                                            </div>
 
-    <div class="modal micromodal-slide" id="inline" aria-hidden="true">
-        <div class="modal-overlay" tabindex="-1" data-micromodal-close>
-            <div
-                    class="modal-container"
-                    role="dialog"
-                    aria-modal="true"
-                    aria-labelledby="inline"
-            >
-                <header class="modal-header">
-                    <h2 class="modal-title" id="inline-title"></h2>
-                    <button
-                            class="modal-close"
-                            aria-label="Close modal"
-                            data-micromodal-close
-                    ></button>
-                </header>
-                <div class="modal-content" id="inline-content">
-                    <!-- カウンセリングに参加する-->
-                    <div class="contact modal-form__container">
+                                            <div class="contact__group modal-form__group">
+                                                <label class="contact__label">
+                                                    <input type="text" class="contact__input modal__input" name="email"
+                                                           placeholder="メールアドレス">
+                                                </label>
+                                            </div>
 
-                        <h2 class="modal-form__title">無料カウンセリングに参加する！</h2>
-                        <p class="modal-form__sub-title"> COUNSELING</p>
-
-                        <div class="modal-form__inner">
-                            <form action="" method="post">
-                                <div class="contact__form modal-form__wrapper">
-                                    <div class="contact__group modal-form__group">
-                                        <label class="contact__label">
-                                            <input type="text" class="contact__input modal__input" name="username"
-                                                   placeholder="お名前">
-                                        </label>
-                                    </div>
+                                            <div class="contact__group modal-form__group">
+                                                <label class="contact__label">
+                                                    <input type="text" class="contact__input modal__input" name="email"
+                                                           placeholder="メールアドレス確認">
+                                                </label>
+                                            </div>
+                                            <div class="contact__group modal-form__group">
+                                                <div class="contact__check-group modal-form__check-group">
+                                                    <label class="contact__policy modal-form__policy"><input
+                                                            type="checkbox"
+                                                            class="contact__check-box"><a
+                                                            class="contact__policy-link" href="/">利用規約</a>と<a
+                                                            class="contact__policy-link"
+                                                            href="/">プライバシーポリシー</a>に同意する</label>
+                                                </div>
+                                            </div>
 
 
-                                    <div class="contact__group modal-form__group">
-
-                                        <label  class="contact__label">
-
-                                            <input type="text" class="contact__input modal__input" name="tel"
-                                                   placeholder="電話番号"></label>
-                                    </div>
-
-                                    <div class="contact__group modal-form__group">
-                                        <label class="contact__label">
-                                            <input type="text" class="contact__input modal__input" name="email"
-                                                   placeholder="メールアドレス">
-                                        </label>
-                                    </div>
-
-                                    <div class="contact__group modal-form__group">
-                                        <label class="contact__label">
-                                            <input type="text" class="contact__input modal__input" name="email"
-                                                   placeholder="メールアドレス確認">
-                                        </label>
-                                    </div>
-
-
-
-                                    <div class="contact__group modal-form__group">
-                                        <div class="contact__check-group modal-form__check-group">
-                                            <label class="contact__policy modal-form__policy"><input type="checkbox" class="contact__check-box"><a
-                                                    class="contact__policy-link" href="/">利用規約</a>と<a class="contact__policy-link" href="/">プライバシーポリシー</a>に同意する</label>
+                                            <div class="contact__order contact__btn-box modal-form__btn-box">
+                                                <div class="contact__error"></div>
+                                                <button class="contact__btn modal-form__btn ">送信する</button>
+                                            </div>
                                         </div>
-                                    </div>
-
-
-
-                                    <div class="contact__order contact__btn-box modal-form__btn-box">
-                                        <div class="contact__error"></div>
-                                        <button class="contact__btn modal-form__btn ">送信する</button>
-                                    </div>
+                                    </form>
                                 </div>
-                            </form>
+                            </div>
+
+                            <!-- /.modal-text -->
                         </div>
                     </div>
-
-                    <!-- /.modal-text -->
                 </div>
             </div>
+
+
+            <h2 class="section__title about__title"><span class="ac-text">ディラボ</span>とは</h2>
+            <h3 class="about__sub-title">
+                ディラボは<span class="ac-text">業界初</span>の<br>
+                <span class="ac-text ac-line">出世払い形式のプログラミングスクール</span>
+            </h3>
+            <p class="about__text">
+                「受講中に働きながらお金を払うのは大変」<br>
+                「卒業後に就職できるか不安」<br>
+                「本当にプログラミングが習得できるかわからない」</p>
+            <p class="about__text">のようなプログラミングスクールに通う上で<br class="sp-only">避けては通れない
+            <p>
+            <p class="about__your"> あなたの</p>
+            <strong class="about__point ac-text">お金の不安を100％なくします!</strong>
         </div>
     </div>
-
-
-    <h2 class="section__title about__title"><span class="ac-text">ディラボ</span>とは</h2>
-    <h3 class="about__sub-title">
-        ディラボは<span class="ac-text">業界初</span>の<br>
-        <span class="ac-text ac-line">出世払い形式のプログラミングスクール</span>
-    </h3>
-    <p class="about__text">
-        「受講中に働きながらお金を払うのは大変」<br>
-        「卒業後に就職できるか不安」<br>
-        「本当にプログラミングが習得できるかわからない」</p>
-    <p class="about__text">のようなプログラミングスクールに通う上で<br class="sp-only">避けては通れない
-    <p>
-    <p class="about__your"> あなたの</p>
-    <strong class="about__point ac-text">お金の不安を100％なくします!</strong>
 </section>
 
 
@@ -353,24 +361,26 @@
 </div>
 
 <section class="payment">
-    <div class="container payment__container">
-        <h3 class="payment__sub">支払いは就職成功後でOK！<br class="sp-only"><span class="ac-text">受講中の支払いは完全無料</span>！</h3>
-        <p class="payment__desc">
-            ディラボでは支払いが「卒業後に就職が決まった段階」から発生します。<br>
-            実際にプログラミングで収入が発生したタイミングからの支払いになるため、<br>
-            安心してプログラミング学習や就職活動を進めることが可能です。</p>
+    <div class="contrnt">
+        <div class="container payment__container">
+            <h3 class="payment__sub">支払いは就職成功後でOK！<br class="sp-only"><span class="ac-text">受講中の支払いは完全無料</span>！</h3>
+            <p class="payment__desc">
+                ディラボでは支払いが「卒業後に就職が決まった段階」から発生します。<br>
+                実際にプログラミングで収入が発生したタイミングからの支払いになるため、<br>
+                安心してプログラミング学習や就職活動を進めることが可能です。</p>
 
-        <p class="payment__desc-more">さらに</p>
+            <p class="payment__desc-more">さらに</p>
 
-        <p class="payment__title-sub">入塾テストの<span class="ac-text">成績優秀者限定</span>で</p>
-        <h2 class="payment__title">受講費用が<span class="ac-text">全額無料</span>になる<br>
-            <span class="ac-text">特待生制度</span>あり</h2>
-        <p class="payment__attention">※詳しくは無料カウンセリングでご相談ください</p>
+            <p class="payment__title-sub">入塾テストの<span class="ac-text">成績優秀者限定</span>で</p>
+            <h2 class="payment__title">受講費用が<span class="ac-text">全額無料</span>になる<br>
+                <span class="ac-text">特待生制度</span>あり</h2>
+            <p class="payment__attention">※詳しくは無料カウンセリングでご相談ください</p>
 
-        <div class="payment__video">
-            <h3 class="payment__video-title">ディラボ紹介動画</h3>
-            <video controls preload="auto" class="payment__video-play" src="assets/video/PRE17_DEVLAB_origin.mp4">
-            </video>
+            <div class="payment__video">
+                <h3 class="payment__video-title">ディラボ紹介動画</h3>
+                <video controls preload="auto" class="payment__video-play" src="assets/video/PRE17_DEVLAB_origin.mp4">
+                </video>
+            </div>
         </div>
     </div>
 </section>
@@ -386,33 +396,36 @@
             </ul>
             <p class="cva__item">無理な勧誘一切なし</p>
         </div>
+
         <p class="cva__text">「出世払いって本当に大丈夫？」<br class="sp-only">「エンジニアの業界のリアルを知りたい」<br>
             「ディラボに興味がある」どんな目的でも構いません！<br>
             何でも相談できる無料カウンセリングを実施しています。</p>
+
         <ul class="cva__contact">
-            <ul class="cva__contact">
-                <li class="cva__free"><button data-micromodal-trigger="modal-11" class="modal-open cva__free-link"><span class="ac-text">無料カウンセリングに</span>参加する
+            <li class="cva__free">
+                <button data-micromodal-trigger="modal-11" class="modal-open cva__free-link"><span class="ac-text">無料カウンセリングに</span>参加する
                     <figure class="cva__free-arrow"><img src="/assets/img/free_arrow.png" alt="無料カウンセリングに参加する"></figure>
                 </button>
-                </li>
-                <li class="cva__line">
-                    <a href="https://lin.ee/8ZOlJpg" class="cva__line-link">
-                        <figure class="cva__line-icon">
-                            <img src="/assets/img/line.png" alt="ラインで相談する">
-                        </figure>
-                        <div class="cva__line-center">
-                            <p class="cva__line-top">24時間受付中！</p>
-                            <p class="cva__line-bottom"><span class="line-ac">LINEで</span>無料相談する</p>
-                        </div>
-                        <figure class="cva__line-arrow">
-                            <img src="/assets/img/line_arrow.png" alt="LINEで無料相談する">
-                        </figure>
-                    </a></li>
-            </ul>
+            </li>
+            <li class="cva__line">
+                <a href="https://lin.ee/8ZOlJpg" class="cva__line-link">
+                    <figure class="cva__line-icon">
+                        <img src="/assets/img/line.png" alt="ラインで相談する">
+                    </figure>
+                    <div class="cva__line-center">
+                        <p class="cva__line-top">24時間受付中！</p>
+                        <p class="cva__line-bottom"><span class="line-ac">LINEで</span>無料相談する</p>
+                    </div>
+                    <figure class="cva__line-arrow">
+                        <img src="/assets/img/line_arrow.png" alt="LINEで無料相談する">
+                    </figure>
+                </a>
+            </li>
+        </ul>
     </div>
+
 </section>
-<button data-micromodal-trigger="modal-6" class="banner__btn modal-open">キャンペーンの応募はこちら！</button>
-</div>
+
 
 <!--モーダル-->
 <div class="modal micromodal-slide" id="modal-11" aria-hidden="true">
@@ -451,7 +464,7 @@
 
                                 <div class="contact__group modal-form__group">
 
-                                    <label  class="contact__label">
+                                    <label class="contact__label">
 
                                         <input type="text" class="contact__input modal__input" name="tel"
                                                placeholder="電話番号"></label>
@@ -472,14 +485,14 @@
                                 </div>
 
 
-
                                 <div class="contact__group modal-form__group">
                                     <div class="contact__check-group modal-form__check-group">
-                                        <label class="contact__policy modal-form__policy"><input type="checkbox" class="contact__check-box"><a
-                                                class="contact__policy-link" href="/">利用規約</a>と<a class="contact__policy-link" href="/">プライバシーポリシー</a>に同意する</label>
+                                        <label class="contact__policy modal-form__policy"><input type="checkbox"
+                                                                                                 class="contact__check-box"><a
+                                                class="contact__policy-link" href="/">利用規約</a>と<a
+                                                class="contact__policy-link" href="/">プライバシーポリシー</a>に同意する</label>
                                     </div>
                                 </div>
-
 
 
                                 <div class="contact__order contact__btn-box modal-form__btn-box">
@@ -545,8 +558,9 @@
     </p>
     <h3 class="third feature__sub-title">24時間学習できる環境を整備</h3>
     <h4 class="feature__third__title">スキマ時間でも勉強しやすい<br class="sp-only"><span class="ac-text">e-ラーニング</span>導入</h4>
-    <div class="feature__third__img"><iframe width="600" height="500" scrolling="no" frameborder="0" src="https://suptra.devlab.co.jp/GMSL11">
-    </iframe>
+    <div class="feature__third__img">
+        <iframe scrolling="no" frameborder="0" src="https://suptra.devlab.co.jp/GMSL11">
+        </iframe>
     </div>
 
     <h4 class="feature__third__title">質問回数無制限！<span class="ac-text">独自チャット機能「ディラボチャット」による自習サポート</span></h4>
@@ -572,20 +586,26 @@
     <h3 class="fifth feature__sub-title">転職に向けた充実のサポート</h3>
     <div class="feature__fifth__wrapper">
         <div class="feature__fifth__card">
-            <h4 class="feature__card-title feature__fifth-title">累計500名以上を担当した<br><span class="ac-text">転職のスペシャリスト</span>がサポート</h4>
-            <figure class="feature__fifth__img1 feature__fifth-img"><img src="/assets/img/feature3@2x.jpg" alt="転職のスペシャリストがサポート"></figure>
+            <h4 class="feature__card-title feature__fifth-title">累計500名以上を担当した<br><span
+                    class="ac-text">転職のスペシャリスト</span>がサポート</h4>
+            <figure class="feature__fifth__img1 feature__fifth-img"><img src="/assets/img/feature3@2x.jpg"
+                                                                         alt="転職のスペシャリストがサポート"></figure>
             <p class="feature__card-desc feature__fifth-desc">累計500名以上を担当したエンジニア転職のスペシャリストが履歴書や面談対策など転職のサポートを行います。</p>
         </div>
 
         <div class="feature__fifth__card feature__fifth-reverse">
-            <h4 class="feature__card-title feature__fifth-reverse-title">転職活動中の<br><span class="ac-text">アピールに使える</span>卒業制作</h4>
-            <figure class="feature__fifth__img2 feature__fifth-reverse-img"><img src="/assets/img/feature4@2x.jpg" alt="アピールに使える卒業制作"></figure>
-            <p class="feature__card-desc feature__fifth-reverse-desc">カリキュラムの最後では転職活動中のポートフォリオとしても利用可能なディラボのe-ラーニングシステムを卒業制作として開発します。
+            <h4 class="feature__card-title feature__fifth-reverse-title">転職活動中の<br><span class="ac-text">アピールに使える</span>卒業制作
+            </h4>
+            <figure class="feature__fifth__img2 feature__fifth-reverse-img"><img src="/assets/img/feature4@2x.jpg"
+                                                                                 alt="アピールに使える卒業制作"></figure>
+            <p class="feature__card-desc feature__fifth-reverse-desc">
+                カリキュラムの最後では転職活動中のポートフォリオとしても利用可能なディラボのe-ラーニングシステムを卒業制作として開発します。
                 １からシステムを作る経験ができるためプログラミングを書くこと以外にも総合的なスキルを鍛えることができます。</p>
         </div>
         <div class="feature__fifth__card">
             <h4 class="feature__card-title feature__fifth-title">成績優秀者限定！<br><span class="ac-text">独自の就職先紹介</span></h4>
-            <figure class="fifth__img3 feature__fifth-img"><img src="/assets/img/feature5@2x.jpg" alt="独自の就職先紹介"></figure>
+            <figure class="fifth__img3 feature__fifth-img"><img src="/assets/img/feature5@2x.jpg" alt="独自の就職先紹介">
+            </figure>
 
             <p class="feature__card-desc feature__fifth-desc">e-ラーニングの正答率や提出された課題のクオリティ
                 などを総合的に判断し、成績優秀者と認められた方に関してはディラボが有する独自の紹介ルートで就職先をご紹介します。</p>
@@ -611,9 +631,10 @@
             「ディラボに興味がある」どんな目的でも構いません！<br>
             何でも相談できる無料カウンセリングを実施しています。</p>
         <ul class="cva__contact">
-            <li class="cva__free"><button data-micromodal-trigger="modal-8" class="modal-open cva__free-link"><span class="ac-text">無料カウンセリングに</span>参加する
-                <figure class="cva__free-arrow"><img src="/assets/img/free_arrow.png" alt="無料カウンセリングに参加する"></figure>
-            </button>
+            <li class="cva__free">
+                <button data-micromodal-trigger="modal-8" class="modal-open cva__free-link"><span class="ac-text">無料カウンセリングに</span>参加する
+                    <figure class="cva__free-arrow"><img src="/assets/img/free_arrow.png" alt="無料カウンセリングに参加する"></figure>
+                </button>
             </li>
             <li class="cva__line">
                 <a href="https://lin.ee/8ZOlJpg" class="cva__line-link">
@@ -670,7 +691,7 @@
 
                                 <div class="contact__group modal-form__group">
 
-                                    <label  class="contact__label">
+                                    <label class="contact__label">
 
                                         <input type="text" class="contact__input modal__input" name="tel"
                                                placeholder="電話番号"></label>
@@ -691,14 +712,14 @@
                                 </div>
 
 
-
                                 <div class="contact__group modal-form__group">
                                     <div class="contact__check-group modal-form__check-group">
-                                        <label class="contact__policy modal-form__policy"><input type="checkbox" class="contact__check-box"><a
-                                                class="contact__policy-link" href="/">利用規約</a>と<a class="contact__policy-link" href="/">プライバシーポリシー</a>に同意する</label>
+                                        <label class="contact__policy modal-form__policy"><input type="checkbox"
+                                                                                                 class="contact__check-box"><a
+                                                class="contact__policy-link" href="/">利用規約</a>と<a
+                                                class="contact__policy-link" href="/">プライバシーポリシー</a>に同意する</label>
                                     </div>
                                 </div>
-
 
 
                                 <div class="contact__order contact__btn-box modal-form__btn-box">
@@ -719,14 +740,13 @@
 <!--無料オンラインカウンセリングここまで-->
 
 
-
 <!--ディラボの講師-->
 <section class="tutor">
     <h2 class="section__title">ディラボの<span class="ac-text">講師</span></h2>
     <p class="section__sub-title">TUTOR</p>
     <h3 class="tutor__title">ディラボの講師は<br class="sp-only">
         実際に現場で働くプロエンジニア</h3>
-    <div class="slider">
+    <div class="slider content">
         <div class="slider-img">
             <div class="tutor__card">
                 <figure class="tutor__img">
@@ -734,7 +754,8 @@
                 </figure>
                 <h3 class="tutor__name">橋本 將</h3>
                 <p class="tutor__en ac-text">Masaru Hashimoto</p>
-                <p class="tutor__desc">これまで、開発エンジニアとして大手企業から中小企業まで様々な企業で開発経験を積んだプロフェッショナルエンジニア！長年、経験を積んだ開発エンジニアだからこそ分かる、本当に現場で活躍できるノウハウ、スキルを提供！</p>
+                <p class="tutor__desc">
+                    これまで、開発エンジニアとして大手企業から中小企業まで様々な企業で開発経験を積んだプロフェッショナルエンジニア！長年、経験を積んだ開発エンジニアだからこそ分かる、本当に現場で活躍できるノウハウ、スキルを提供！</p>
             </div>
         </div>
         <div class="slider-img">
@@ -744,7 +765,8 @@
                 </figure>
                 <h3 class="tutor__name">山本 杏奈</h3>
                 <p class="tutor__en ac-text">Anna Yamamoto</p>
-                <p class="tutor__desc">JavaやJavaScriptを得意言語とした現役エンジニア。自身もプログラミングスクールに通う経験を持ち、スクールに通っていたからこそ分かる生徒の気持ちに寄り添った指導を行う。</p>
+                <p class="tutor__desc">
+                    JavaやJavaScriptを得意言語とした現役エンジニア。自身もプログラミングスクールに通う経験を持ち、スクールに通っていたからこそ分かる生徒の気持ちに寄り添った指導を行う。</p>
             </div>
         </div>
         <div class="slider-img">
@@ -754,17 +776,19 @@
                 </figure>
                 <h3 class="tutor__name">長澤 弘一郎</h3>
                 <p class="tutor__en ac-text">Koichiro Nagasawa</p>
-                <p class="tutor__desc">JavaやJavaScriptはもちろん、GASやVBAなどの業務改善に役立つ言語も得意とする現役エンジニア。過去に多くのWebシステムやアプリを開発し、プログラミングの楽しさを多くの生徒に伝える。</p>
+                <p class="tutor__desc">
+                    JavaやJavaScriptはもちろん、GASやVBAなどの業務改善に役立つ言語も得意とする現役エンジニア。過去に多くのWebシステムやアプリを開発し、プログラミングの楽しさを多くの生徒に伝える。</p>
             </div>
         </div>
         <div class="slider-img">
             <div class="tutor__card">
                 <figure class="tutor__img">
-                <img src="/assets/img/sasugo@2x.jpg" alt="指尾 慶">
+                    <img src="/assets/img/sasugo@2x.jpg" alt="指尾 慶">
                 </figure>
                 <h3 class="tutor__name">指尾 慶</h3>
                 <p class="tutor__en ac-text">Sasuo Suguru</p>
-                <p class="tutor__desc">過去に柔道整復師と働きつつ業務アプリを開発していた経験を持ち、30代半ばで完全未経験からエンジニア転職を果たし現在は最前線で活躍するエンジニア。Javaを中心とし様々なシステムやアプリを開発を得意とする。企業向け講師としても活躍し、幅広い指導実績を持つ。</p>
+                <p class="tutor__desc">
+                    過去に柔道整復師と働きつつ業務アプリを開発していた経験を持ち、30代半ばで完全未経験からエンジニア転職を果たし現在は最前線で活躍するエンジニア。Javaを中心とし様々なシステムやアプリを開発を得意とする。企業向け講師としても活躍し、幅広い指導実績を持つ。</p>
             </div>
         </div>
         <div class="slider-img">
@@ -774,7 +798,8 @@
                 </figure>
                 <h3 class="tutor__name">佐々木 洋輔</h3>
                 <p class="tutor__en ac-text">Yosuke Sasaki</p>
-                <p class="tutor__desc">これまでにサーバーサイド、クライアントサイドで数多くの開発実績を積んだエンジニア。プログラムのアルゴリズムを分かりやすく解説し、「プログラミングは難しい」という捉え方を180度変えさせる指導を徹底！
+                <p class="tutor__desc">
+                    これまでにサーバーサイド、クライアントサイドで数多くの開発実績を積んだエンジニア。プログラムのアルゴリズムを分かりやすく解説し、「プログラミングは難しい」という捉え方を180度変えさせる指導を徹底！
                 </p>
             </div>
         </div>
@@ -786,144 +811,149 @@
 
 <!--生徒の声-->
 <section class="student">
-    <h2 class="section__title">ディラボに通った<span class="ac-text">生徒の声</span></h2>
-    <p class="section__sub-title">STUDENT VOICE</p>
+    <div class="content">
+        <h2 class="section__title">ディラボに通った<span class="ac-text">生徒の声</span></h2>
+        <p class="section__sub-title">STUDENT VOICE</p>
 
-    <div class="student__wrapper container">
-<!--モーダル-->
-        <div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
-            <div class="modal-overlay" tabindex="-1" data-micromodal-close>
-                <div
-                        class="modal-container"
-                        role="dialog"
-                        aria-modal="true"
-                        aria-labelledby="modal-1-title"
-                >
-                    <header class="modal-header">
-                        <h2 class="modal-title" id="modal-1-title"></h2>
-                        <button
-                                class="modal-close"
-                                aria-label="Close modal"
-                                data-micromodal-close
-                        ></button>
-                    </header>
-                    <div class="modal-content" id="modal-1-content">
-<!--                 <figure class="modal__img">-->
-<!--                     <img src="/assets/img/student_modal.png" alt="山田 太郎さん">-->
-<!--                 </figure>-->
-                        <video controls preload="auto" class="modal__img" src="assets/video/konisisama_pre03_origin.mp4">
-                        </video>
+        <div class="student__wrapper container">
+            <!--モーダル-->
+            <div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
+                <div class="modal-overlay" tabindex="-1" data-micromodal-close>
+                    <div
+                            class="modal-container"
+                            role="dialog"
+                            aria-modal="true"
+                            aria-labelledby="modal-1-title"
+                    >
+                        <header class="modal-header">
+                            <h2 class="modal-title" id="modal-1-title"></h2>
+                            <button
+                                    class="modal-close"
+                                    aria-label="Close modal"
+                                    data-micromodal-close
+                            ></button>
+                        </header>
+                        <div class="modal-content" id="modal-1-content">
+                            <!--                 <figure class="modal__img">-->
+                            <!--                     <img src="/assets/img/student_modal.png" alt="山田 太郎さん">-->
+                            <!--                 </figure>-->
+                            <video controls preload="auto" class="modal__img"
+                                   src="assets/video/konisisama_pre03_origin.mp4">
+                            </video>
 
-                        <!-- /.modal-text -->
+                            <!-- /.modal-text -->
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="student__card">
-            <!-- 開くボタン -->
-            <button data-micromodal-trigger="modal-1" class="modal-open">
-                <figure class="student__play">
-                    <img src="/assets/img/student.png" alt="山田 太郎さん">
-                </figure>
-            </button>
-            <h3 class="student__name">小西様</h3>
-            <dl class="student__info">
-                <dt class="student__info-title">前職：</dt>
-                <dd class="student__info-ans"></dd>
-                <dt class="student__info-title">卒業後の勤務先：</dt>
-                <dd class="student__info-ans"></dd>
-            </dl>
-        </div>
+            <div class="student__card">
+                <!-- 開くボタン -->
+                <button data-micromodal-trigger="modal-1" class="modal-open">
+                    <figure class="student__play">
+                        <img src="/assets/img/student.png" alt="山田 太郎さん">
+                    </figure>
+                </button>
+                <h3 class="student__name">小西様</h3>
+                <dl class="student__info">
+                    <dt class="student__info-title">前職：</dt>
+                    <dd class="student__info-ans"></dd>
+                    <dt class="student__info-title">卒業後の勤務先：</dt>
+                    <dd class="student__info-ans"></dd>
+                </dl>
+            </div>
 
-        <!--モーダル-->
-        <div class="modal micromodal-slide" id="modal-2" aria-hidden="true">
-            <div class="modal-overlay" tabindex="-1" data-micromodal-close>
-                <div
-                        class="modal-container"
-                        role="dialog"
-                        aria-modal="true"
-                        aria-labelledby="modal-2-title"
-                >
-                    <header class="modal-header">
-                        <h2 class="modal-title" id="modal-2-title"></h2>
-                        <button
-                                class="modal-close"
-                                aria-label="Close modal"
-                                data-micromodal-close
-                        ></button>
-                    </header>
-                    <div class="modal-content" id="modal-2-content">
-<!--                        <figure class="modal__img">-->
-<!--                            <img src="/assets/img/student_modal.png" alt="山田 太郎さん">-->
-<!--                        </figure>-->
-                        <video controls preload="auto" class="modal__img" src="assets/video/sasakisama_pre03_origin.mp4">
-                        </video>
-                        <!-- /.modal-text -->
+            <!--モーダル-->
+            <div class="modal micromodal-slide" id="modal-2" aria-hidden="true">
+                <div class="modal-overlay" tabindex="-1" data-micromodal-close>
+                    <div
+                            class="modal-container"
+                            role="dialog"
+                            aria-modal="true"
+                            aria-labelledby="modal-2-title"
+                    >
+                        <header class="modal-header">
+                            <h2 class="modal-title" id="modal-2-title"></h2>
+                            <button
+                                    class="modal-close"
+                                    aria-label="Close modal"
+                                    data-micromodal-close
+                            ></button>
+                        </header>
+                        <div class="modal-content" id="modal-2-content">
+                            <!--                        <figure class="modal__img">-->
+                            <!--                            <img src="/assets/img/student_modal.png" alt="山田 太郎さん">-->
+                            <!--                        </figure>-->
+                            <video controls preload="auto" class="modal__img"
+                                   src="assets/video/sasakisama_pre03_origin.mp4">
+                            </video>
+                            <!-- /.modal-text -->
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="student__card">
-            <!-- 開くボタン -->
-            <button data-micromodal-trigger="modal-2" class="modal-open">
-                <figure class="student__play">
-                    <img src="/assets/img/student.png" alt="山田 太郎さん">
-                </figure>
-            </button>
-            <h3 class="student__name">佐々木様</h3>
-            <dl class="student__info">
-                <dt class="student__info-title">前職：</dt>
-                <dd class="student__info-ans"></dd>
-                <dt class="student__info-title">卒業後の勤務先：</dt>
-                <dd class="student__info-ans"></dd>
-            </dl>
-        </div>
+            <div class="student__card">
+                <!-- 開くボタン -->
+                <button data-micromodal-trigger="modal-2" class="modal-open">
+                    <figure class="student__play">
+                        <img src="/assets/img/student.png" alt="山田 太郎さん">
+                    </figure>
+                </button>
+                <h3 class="student__name">佐々木様</h3>
+                <dl class="student__info">
+                    <dt class="student__info-title">前職：</dt>
+                    <dd class="student__info-ans"></dd>
+                    <dt class="student__info-title">卒業後の勤務先：</dt>
+                    <dd class="student__info-ans"></dd>
+                </dl>
+            </div>
 
-        <!--モーダル-->
-        <div class="modal micromodal-slide" id="modal-3" aria-hidden="true">
-            <div class="modal-overlay" tabindex="-1" data-micromodal-close>
-                <div
-                        class="modal-container"
-                        role="dialog"
-                        aria-modal="true"
-                        aria-labelledby="modal-3-title"
-                >
-                    <header class="modal-header">
-                        <h2 class="modal-title" id="modal-3-title"></h2>
-                        <button
-                                class="modal-close"
-                                aria-label="Close modal"
-                                data-micromodal-close
-                        ></button>
-                    </header>
-                    <div class="modal-content" id="modal-3-content">
-<!--                        <figure class="modal__img">-->
-<!--                            <img src="/assets/img/student_modal.png" alt="山田 太郎さん">-->
-<!--                        </figure>-->
-                        <video controls preload="auto" class="modal__img" src="assets/video/okadasama_pre03_origin.mp4">
-                        </video>
-                        <!-- /.modal-text -->
+            <!--モーダル-->
+            <div class="modal micromodal-slide" id="modal-3" aria-hidden="true">
+                <div class="modal-overlay" tabindex="-1" data-micromodal-close>
+                    <div
+                            class="modal-container"
+                            role="dialog"
+                            aria-modal="true"
+                            aria-labelledby="modal-3-title"
+                    >
+                        <header class="modal-header">
+                            <h2 class="modal-title" id="modal-3-title"></h2>
+                            <button
+                                    class="modal-close"
+                                    aria-label="Close modal"
+                                    data-micromodal-close
+                            ></button>
+                        </header>
+                        <div class="modal-content" id="modal-3-content">
+                            <!--                        <figure class="modal__img">-->
+                            <!--                            <img src="/assets/img/student_modal.png" alt="山田 太郎さん">-->
+                            <!--                        </figure>-->
+                            <video controls preload="auto" class="modal__img"
+                                   src="assets/video/okadasama_pre03_origin.mp4">
+                            </video>
+                            <!-- /.modal-text -->
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="student__card">
-            <!-- 開くボタン -->
-            <button data-micromodal-trigger="modal-3" class="modal-open">
-                <figure class="student__play">
-                    <img src="/assets/img/student.png" alt="山田 太郎さん">
-                </figure>
-            </button>
-            <h3 class="student__name">岡田様</h3>
-            <dl class="student__info">
-                <dt class="student__info-title">前職：</dt>
-                <dd class="student__info-ans"></dd>
-                <dt class="student__info-title">卒業後の勤務先：</dt>
-                <dd class="student__info-ans"></dd>
-            </dl>
-        </div>
+            <div class="student__card">
+                <!-- 開くボタン -->
+                <button data-micromodal-trigger="modal-3" class="modal-open">
+                    <figure class="student__play">
+                        <img src="/assets/img/student.png" alt="山田 太郎さん">
+                    </figure>
+                </button>
+                <h3 class="student__name">岡田様</h3>
+                <dl class="student__info">
+                    <dt class="student__info-title">前職：</dt>
+                    <dd class="student__info-ans"></dd>
+                    <dt class="student__info-title">卒業後の勤務先：</dt>
+                    <dd class="student__info-ans"></dd>
+                </dl>
+            </div>
 
 
+        </div>
     </div>
 </section>
 <!--生徒の声ここまで-->
@@ -942,29 +972,30 @@
         <p class="cva__text">「出世払いって本当に大丈夫？」<br class="sp-only">「エンジニアの業界のリアルを知りたい」<br>
             「ディラボに興味がある」どんな目的でも構いません！<br>
             何でも相談できる無料カウンセリングを実施しています。</p>
-            <ul class="cva__contact">
-                <li class="cva__free"><button data-micromodal-trigger="modal-7" class="modal-open cva__free-link"><span class="ac-text">無料カウンセリングに</span>参加する
+        <ul class="cva__contact">
+            <li class="cva__free">
+                <button data-micromodal-trigger="modal-7" class="modal-open cva__free-link"><span class="ac-text">無料カウンセリングに</span>参加する
                     <figure class="cva__free-arrow"><img src="/assets/img/free_arrow.png" alt="無料カウンセリングに参加する"></figure>
                 </button>
-                </li>
-                <li class="cva__line">
-                    <a href="https://lin.ee/8ZOlJpg" class="cva__line-link">
-                        <figure class="cva__line-icon">
-                            <img src="/assets/img/line.png" alt="ラインで相談する">
-                        </figure>
-                        <div class="cva__line-center">
-                            <p class="cva__line-top">24時間受付中！</p>
-                            <p class="cva__line-bottom"><span class="line-ac">LINEで</span>無料相談する</p>
-                        </div>
-                        <figure class="cva__line-arrow">
-                            <img src="/assets/img/line_arrow.png" alt="LINEで無料相談する">
-                        </figure>
-                    </a>
-                </li>
-            </ul>
+            </li>
+            <li class="cva__line">
+                <a href="https://lin.ee/8ZOlJpg" class="cva__line-link">
+                    <figure class="cva__line-icon">
+                        <img src="/assets/img/line.png" alt="ラインで相談する">
+                    </figure>
+                    <div class="cva__line-center">
+                        <p class="cva__line-top">24時間受付中！</p>
+                        <p class="cva__line-bottom"><span class="line-ac">LINEで</span>無料相談する</p>
+                    </div>
+                    <figure class="cva__line-arrow">
+                        <img src="/assets/img/line_arrow.png" alt="LINEで無料相談する">
+                    </figure>
+                </a>
+            </li>
+        </ul>
     </div>
 </section>
-</div>
+
 
 <!--モーダル-->
 <div class="modal micromodal-slide" id="modal-7" aria-hidden="true">
@@ -1003,7 +1034,7 @@
 
                                 <div class="contact__group modal-form__group">
 
-                                    <label  class="contact__label">
+                                    <label class="contact__label">
 
                                         <input type="text" class="contact__input modal__input" name="tel"
                                                placeholder="電話番号"></label>
@@ -1024,14 +1055,14 @@
                                 </div>
 
 
-
                                 <div class="contact__group modal-form__group">
                                     <div class="contact__check-group modal-form__check-group">
-                                        <label class="contact__policy modal-form__policy"><input type="checkbox" class="contact__check-box"><a
-                                                class="contact__policy-link" href="/">利用規約</a>と<a class="contact__policy-link" href="/">プライバシーポリシー</a>に同意する</label>
+                                        <label class="contact__policy modal-form__policy"><input type="checkbox"
+                                                                                                 class="contact__check-box"><a
+                                                class="contact__policy-link" href="/">利用規約</a>と<a
+                                                class="contact__policy-link" href="/">プライバシーポリシー</a>に同意する</label>
                                     </div>
                                 </div>
-
 
 
                                 <div class="contact__order contact__btn-box modal-form__btn-box">
@@ -1052,105 +1083,107 @@
 <!--無料オンラインカウンセリングここまで-->
 
 <!--表-->
-<div class="dev-table__wrapper container">
-    <table class="dev-table">
-        <thead>
-        <tr class="dev-table__tr">
-            <th class="dev-table__title"></th>
-            <th scope="col">
-                <div class="dev-table__main t-center">
-                    <figure class=" table__logo"><img src="/assets/img/table-logo@2x.png" alt="ディラボ">
-                    </figure>
-                </div>
-            </th>
-            <th><p class="dev-table__th-sub" scope="col">プログラミング<br>
-                スクールA</p></th>
-            <th>
-                <p class="dev-table__th-sub" scope="col">プログラミング<br>
-                    スクールB</p>
-            </th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <th class="dev-table__th" width="11vw">料金</th>
-            <td class="dev-table__main-td ac-text en">598,000<span class="yu dev-table__span sbk">円〜</span></td>
-            <td class="dev-table__sub-td en gray t">657,800<span class="yu dev-table__span">円〜</span></td>
-            <td class="dev-table__sub-td en gray t">640,800<span class="yu dev-table__span">円〜</span></td>
+<div class="content">
+    <div class="dev-table__wrapper container">
+        <table class="dev-table">
+            <thead>
+            <tr class="dev-table__tr">
+                <th class="dev-table__title"></th>
+                <th scope="col">
+                    <div class="dev-table__main t-center">
+                        <figure class=" table__logo"><img src="/assets/img/table-logo@2x.png" alt="ディラボ">
+                        </figure>
+                    </div>
+                </th>
+                <th><p class="dev-table__th-sub" scope="col">プログラミング<br>
+                    スクールA</p></th>
+                <th>
+                    <p class="dev-table__th-sub" scope="col">プログラミング<br>
+                        スクールB</p>
+                </th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th class="dev-table__th" width="11vw">料金</th>
+                <td class="dev-table__main-td ac-text en">598,000<span class="yu dev-table__span sbk">円〜</span></td>
+                <td class="dev-table__sub-td en gray t">657,800<span class="yu dev-table__span">円〜</span></td>
+                <td class="dev-table__sub-td en gray t">640,800<span class="yu dev-table__span">円〜</span></td>
 
-        </tr>
-        <tr>
-            <th class="dev-table__th" >支払い<br class="sp-only">
-                方法
-            </th>
-            <td class="dev-table__main-td sbk cross">卒業後に就職が
-                完了したタイミング
-            </td>
-            <td class="dev-table__sub-td sbk cross">受講が開始<br>
-                する前
-            </td>
-            <td class="dev-table__sub-td cross">卒業後に数年間におよぶ<br class="pc-only">
-                ローンでの支払い
-            </td>
-        </tr>
-        <tr>
-            <th class="dev-table__th" >メイン<br class="sp-only">
-                言語
-            </th>
-            <td class="dev-table__main-td sbk c">現場でよく使わ
-                れているJAVA
-            </td>
-            <td class="dev-table__sub-td sbk c">Ruby on Rails</td>
-            <td class="dev-table__sub-td sbk c">Ruby、<br>
-                Ruby on Rails
-            </td>
-        </tr>
-        <tr>
-            <th class="dev-table__th" >定員</th>
-            <td class="dev-table__main-td sbk">1期10名まで</td>
-            <td class="dev-table__sub-td sbk cross">50〜100名</td>
-            <td class="dev-table__sub-td sbk t">言及なし</td>
-        </tr>
-        <tr>
-            <th class="dev-table__th" >指導<br class="sp-only">
-                方針
-            </th>
-            <td class="dev-table__main-td sbk">現場で活躍する
-                ための指導
-            </td>
-            <td class="dev-table__sub-td sbk cross">コードの書きやすさを<br class="pc-only">
-                重視した言語を指導
-            </td>
-            <td class="dev-table__sub-td sbk cross">メンターの質が<br>
-                バラバラ
-            </td>
-        </tr>
-        <tr>
-            <th class="dev-table__th" >特徴</th>
-            <td class="dev-table__main-td">質問し放題、
-                e-ラーニング
-                擬似チーム開発、
-                卒業制作
-            </td>
-            <td class="dev-table__sub-td sbk cross">質問できない
-                時期がある
-            </td>
-            <td class="dev-table__sub-td sbk c">質問し放題だが、<br>
-                現場のエンジニア
-                じゃない
-            </td>
-        </tr>
-        <tr>
-            <th class="dev-table__th" >開発案件<br>
-                に携われ<br>
-                るまでの<br>
-                スピード<br>
-            <td class="dev-table__main-td">1年以内</td>
-            <td class="dev-table__sub-td sbk cross">非公開</td>
-            <td class="dev-table__sub-td sbk cross">言及なし</td>
-        </tr>
-        </tbody>
-    </table>
+            </tr>
+            <tr>
+                <th class="dev-table__th">支払い<br class="sp-only">
+                    方法
+                </th>
+                <td class="dev-table__main-td sbk cross">卒業後に就職が
+                    完了したタイミング
+                </td>
+                <td class="dev-table__sub-td sbk cross">受講が開始<br>
+                    する前
+                </td>
+                <td class="dev-table__sub-td cross">卒業後に数年間におよぶ<br class="pc-only">
+                    ローンでの支払い
+                </td>
+            </tr>
+            <tr>
+                <th class="dev-table__th">メイン<br class="sp-only">
+                    言語
+                </th>
+                <td class="dev-table__main-td sbk c">現場でよく使わ
+                    れているJAVA
+                </td>
+                <td class="dev-table__sub-td sbk c">Ruby on Rails</td>
+                <td class="dev-table__sub-td sbk c">Ruby、<br>
+                    Ruby on Rails
+                </td>
+            </tr>
+            <tr>
+                <th class="dev-table__th">定員</th>
+                <td class="dev-table__main-td sbk">1期10名まで</td>
+                <td class="dev-table__sub-td sbk cross">50〜100名</td>
+                <td class="dev-table__sub-td sbk t">言及なし</td>
+            </tr>
+            <tr>
+                <th class="dev-table__th">指導<br class="sp-only">
+                    方針
+                </th>
+                <td class="dev-table__main-td sbk">現場で活躍する
+                    ための指導
+                </td>
+                <td class="dev-table__sub-td sbk cross">コードの書きやすさを<br class="pc-only">
+                    重視した言語を指導
+                </td>
+                <td class="dev-table__sub-td sbk cross">メンターの質が<br>
+                    バラバラ
+                </td>
+            </tr>
+            <tr>
+                <th class="dev-table__th">特徴</th>
+                <td class="dev-table__main-td">質問し放題、
+                    e-ラーニング
+                    擬似チーム開発、
+                    卒業制作
+                </td>
+                <td class="dev-table__sub-td sbk cross">質問できない
+                    時期がある
+                </td>
+                <td class="dev-table__sub-td sbk c">質問し放題だが、<br>
+                    現場のエンジニア
+                    じゃない
+                </td>
+            </tr>
+            <tr>
+                <th class="dev-table__th">開発案件<br>
+                    に携われ<br>
+                    るまでの<br>
+                    スピード<br>
+                <td class="dev-table__main-td">1年以内</td>
+                <td class="dev-table__sub-td sbk cross">非公開</td>
+                <td class="dev-table__sub-td sbk cross">言及なし</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
 </div>
 </div>
 <!--表ここまで-->
@@ -1169,9 +1202,11 @@
                     <p class="plan__card-title">短期間で集中して勉強したい方におすすめ</p>
                     <h3 class="plan__course short">短期集中コース</h3>
                     <p class="plan__card-text">就職決定後から</p>
-                    <p class="plan__card-price">月額 <span class="plan__ac my short-text">29,800</span>円<span class="plan__tax">（税込）〜</span>
+                    <p class="plan__card-price">月額 <span class="plan__ac my short-text">29,800</span>円<span
+                            class="plan__tax">（税込）〜</span>
                     </p>
-                    <p class="plan__card-price--small short-small">一括料金<span class="plan__ac2 my short-text">598,000</span>円（税込）
+                    <p class="plan__card-price--small short-small">一括料金<span
+                            class="plan__ac2 my short-text">598,000</span>円（税込）
                     </p>
                     <dl class="plan__items">
                         <dt class="plan__item">期間</dt>
@@ -1252,8 +1287,10 @@
                 <p class="plan__card-title">がっつり学習したい方におすすめ</p>
                 <h3 class="plan__course expert">Expertコース</h3>
                 <p class="plan__card-text">就職決定後から</p>
-                <p class="plan__card-price">月額<span class="plan__ac my expert-text">39,800</span>円<span class="plan__tax">（税込）〜</span></p>
-                <p class="plan__card-price--small expert-small">一括料金<span class="plan__ac2 my expert-text">798,000</span>円（税込）</p>
+                <p class="plan__card-price">月額<span class="plan__ac my expert-text">39,800</span>円<span
+                        class="plan__tax">（税込）〜</span></p>
+                <p class="plan__card-price--small expert-small">一括料金<span
+                        class="plan__ac2 my expert-text">798,000</span>円（税込）</p>
 
                 <dl class="plan__items">
                     <dt class="plan__item">期間</dt>
@@ -1326,7 +1363,6 @@
                             <td class="plan__flow-td">さくらエディタについて
                             </td>
                         </tr>
-
 
 
                         <tr class="plan__flow-tr">
@@ -1529,7 +1565,7 @@
                     <!--/.accordion-title-->
                     <div class="accordion-content faq__answer">
                         <p class="faq__desc">
-                            できます！営業などの他の職種からエンジニアへの転職を目指して多くの方が受講されています。                        </p>
+                            できます！営業などの他の職種からエンジニアへの転職を目指して多くの方が受講されています。 </p>
                     </div>
                     <!--/.accordion-content-->
                 </div>
@@ -1541,7 +1577,7 @@
                     <!--/.accordion-title-->
                     <div class="accordion-content faq__answer">
                         <p class="faq__desc">
-                            可能です。平日でも土日でも基本的に回答します！                        </p>
+                            可能です。平日でも土日でも基本的に回答します！ </p>
                     </div>
                     <!--/.accordion-content-->
                 </div>
@@ -1553,7 +1589,7 @@
                     <!--/.accordion-title-->
                     <div class="accordion-content faq__answer">
                         <p class="faq__desc">
-                            現金一括払い、現金分割支払い（24カ月）、クレジットカード分割支払いからお選びいただけます。                        </p>
+                            現金一括払い、現金分割支払い（24カ月）、クレジットカード分割支払いからお選びいただけます。 </p>
                     </div>
                     <!--/.accordion-content-->
                 </div>
@@ -1565,18 +1601,18 @@
                     <!--/.accordion-title-->
                     <div class="accordion-content faq__answer">
                         <p class="faq__desc">
-                            可能です！就職相談を実施しております。                        </p>
+                            可能です！就職相談を実施しております。 </p>
                     </div>
                     <!--/.accordion-content-->
                 </div>
                 <!-- /.accordion-item -->
                 <div class="accordion-item faq__item">
                     <h3 class="accordion-title js-accordion-title faq__title">
-                        年齢制限はありますか？                    </h3>
+                        年齢制限はありますか？ </h3>
                     <!--/.accordion-title-->
                     <div class="accordion-content faq__answer">
                         <p class="faq__desc">
-                            何歳でも受講は可能ですが、出世払い方式を選択する場合には一部審査がございます。まずはお気軽にお問い合わせください。                    </div>
+                            何歳でも受講は可能ですが、出世払い方式を選択する場合には一部審査がございます。まずはお気軽にお問い合わせください。</div>
                     <!--/.accordion-content-->
                 </div>
                 <!-- /.accordion-item -->
@@ -1603,28 +1639,29 @@
             「ディラボに興味がある」どんな目的でも構いません！<br>
             何でも相談できる無料カウンセリングを実施しています。</p>
 
-            <ul class="cva__contact">
-                <li class="cva__free"><button data-micromodal-trigger="modal-7" class="modal-open cva__free-link"><span class="ac-text">無料カウンセリングに</span>参加する
+        <ul class="cva__contact">
+            <li class="cva__free">
+                <button data-micromodal-trigger="modal-7" class="modal-open cva__free-link"><span class="ac-text">無料カウンセリングに</span>参加する
                     <figure class="cva__free-arrow"><img src="/assets/img/free_arrow.png" alt="無料カウンセリングに参加する"></figure>
                 </button>
-                </li>
-                <li class="cva__line">
-                    <a href="" class="cva__line-link">
-                        <figure class="cva__line-icon">
-                            <img src="/assets/img/line.png" alt="ラインで相談する">
-                        </figure>
-                        <div class="cva__line-center">
-                            <p class="cva__line-top">24時間受付中！</p>
-                            <p class="cva__line-bottom"><span class="line-ac">LINEで</span>無料相談する</p>
-                        </div>
-                        <figure class="cva__line-arrow">
-                            <img src="/assets/img/line_arrow.png" alt="LINEで無料相談する">
-                        </figure>
-                    </a></li>
-      </ul>
+            </li>
+            <li class="cva__line">
+                <a href="https://lin.ee/8ZOlJpg" class="cva__line-link">
+                    <figure class="cva__line-icon">
+                        <img src="/assets/img/line.png" alt="ラインで相談する">
+                    </figure>
+                    <div class="cva__line-center">
+                        <p class="cva__line-top">24時間受付中！</p>
+                        <p class="cva__line-bottom"><span class="line-ac">LINEで</span>無料相談する</p>
+                    </div>
+                    <figure class="cva__line-arrow">
+                        <img src="/assets/img/line_arrow.png" alt="LINEで無料相談する">
+                    </figure>
+                </a></li>
+        </ul>
     </div>
 </section>
-</div>
+
 
 <!--モーダル-->
 <div class="modal micromodal-slide" id="modal-9" aria-hidden="true">
@@ -1663,7 +1700,7 @@
 
                                 <div class="contact__group modal-form__group">
 
-                                    <label  class="contact__label">
+                                    <label class="contact__label">
 
                                         <input type="text" class="contact__input modal__input" name="tel"
                                                placeholder="電話番号"></label>
@@ -1684,14 +1721,14 @@
                                 </div>
 
 
-
                                 <div class="contact__group modal-form__group">
                                     <div class="contact__check-group modal-form__check-group">
-                                        <label class="contact__policy modal-form__policy"><input type="checkbox" class="contact__check-box"><a
-                                                class="contact__policy-link" href="/">利用規約</a>と<a class="contact__policy-link" href="/">プライバシーポリシー</a>に同意する</label>
+                                        <label class="contact__policy modal-form__policy"><input type="checkbox"
+                                                                                                 class="contact__check-box"><a
+                                                class="contact__policy-link" href="/">利用規約</a>と<a
+                                                class="contact__policy-link" href="/">プライバシーポリシー</a>に同意する</label>
                                     </div>
                                 </div>
-
 
 
                                 <div class="contact__order contact__btn-box modal-form__btn-box">
@@ -1723,81 +1760,80 @@
 
     <form action="" method="post">
         <div class="contact__wrapper">
-        <div class="contact__form">
+            <div class="contact__form">
 
-            <div class="contact__group">
-                <div class="contact__label-group">
-                    <label for="username" class="contact__label">お名前</label>
-                    <div class="contact__badge contact__required">必須</div>
+                <div class="contact__group">
+                    <div class="contact__label-group">
+                        <label for="username" class="contact__label">お名前</label>
+                        <div class="contact__badge contact__required">必須</div>
+                    </div>
+                    <input type="text" class="contact__input contact__input-half" name="username" id="username"
+                           placeholder="例) 山田花子" required>
                 </div>
-                <input type="text" class="contact__input contact__input-half" name="username" id="username"
-                       placeholder="例) 山田花子" required>
+
+                <div class="contact__group">
+                    <div class="contact__label-group">
+                        <label for="userkana" class="contact__label">お名前</label>
+                        <div class="contact__badge contact__required">必須</div>
+                    </div>
+                    <input type="text" class="contact__input contact__input-half" name="userkana" id="userkana"
+                           placeholder="例）ヤマダタロウ" required>
+                </div>
+
+                <div class="contact__group">
+                    <div class="contact__label-group">
+                        <label for="tel" class="contact__label">電話番号</label>
+                        <div class="contact__badge contact__required">必須</div>
+                    </div>
+                    <input type="text" class="contact__input contact__input-half" name="tel" id="tel"
+                           placeholder="例）09012345678" required>
+                </div>
+                <div class="contact__group">
+                    <div class="contact__label-group">
+                        <label for="email" class="contact__label">メールアドレス</label>
+                        <div class="contact__badge contact__required">必須</div>
+                    </div>
+                    <input type="text" class="contact__input contact__input-half" name="email" id="email"
+                           placeholder="例）abcd@mail.com" required>
+                </div>
+
+                <div class="contact__group">
+                    <div class="contact__check-group">
+                        <p class="contact__label contact__label-check ">請求資料</p>
+                        <div>
+                            <label class="contact__input-check"><input type="checkbox"
+                                                                       class="contact__check-box">ディラボ紹介資料</label>
+                            <label class="contact__input-check"><input type="checkbox" class="contact__check-box">プログラミング学習完全ガイド（Java編）</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact__group">
+                    <div class="contact__label-group">
+                        <label for="comment" class="contact__label">備考欄</label>
+                    </div>
+                    <textarea class="contact__input-textarea" id="comment" placeholder="質問内容などをご記入ください"></textarea>
+                </div>
+
+                <div class="contact__group">
+                    <div class="contact__check-group">
+                        <label class="contact__policy"><input type="checkbox" class="contact__check-box"><a
+                                class="contact__policy-link" href="/">利用規約</a>と<a class="contact__policy-link" href="/">プライバシーポリシー</a>に同意する</label>
+                    </div>
+                </div>
+
+
             </div>
 
-            <div class="contact__group">
-                <div class="contact__label-group">
-                    <label for="userkana" class="contact__label">お名前</label>
-                    <div class="contact__badge contact__required">必須</div>
-                </div>
-                <input type="text" class="contact__input contact__input-half" name="userkana" id="userkana"
-                       placeholder="例）ヤマダタロウ" required>
+
+            <div class="contact__order contact__btn-box">
+                <div class="contact__error"></div>
+                <button class="contact__btn" id="contact__btn">送信する</button>
             </div>
-
-            <div class="contact__group">
-                <div class="contact__label-group">
-                    <label for="tel" class="contact__label">電話番号</label>
-                    <div class="contact__badge contact__required">必須</div>
-                </div>
-                <input type="text" class="contact__input contact__input-half" name="tel" id="tel"
-                       placeholder="例）09012345678" required>
-            </div>
-            <div class="contact__group">
-                <div class="contact__label-group">
-                    <label for="email" class="contact__label">メールアドレス</label>
-                    <div class="contact__badge contact__required">必須</div>
-                </div>
-                <input type="text" class="contact__input contact__input-half" name="email" id="email"
-                       placeholder="例）abcd@mail.com" required>
-            </div>
-
-            <div class="contact__group">
-                <div class="contact__check-group">
-                    <p class="contact__label contact__label-check ">請求資料</p>
-                    <div>
-                    <label class="contact__input-check"><input type="checkbox"
-                                                               class="contact__check-box">ディラボ紹介資料</label>
-                    <label class="contact__input-check"><input type="checkbox" class="contact__check-box">プログラミング学習完全ガイド（Java編）</label>
-                </div>
-                </div>
-            </div>
-
-            <div class="contact__group">
-                <div class="contact__label-group">
-                    <label for="comment" class="contact__label">備考欄</label>
-                </div>
-                <textarea class="contact__input-textarea" id="comment" placeholder="質問内容などをご記入ください"></textarea>
-            </div>
-
-            <div class="contact__group">
-                <div class="contact__check-group">
-                    <label class="contact__policy"><input type="checkbox" class="contact__check-box"><a
-                            class="contact__policy-link" href="/">利用規約</a>と<a class="contact__policy-link" href="/">プライバシーポリシー</a>に同意する</label>
-                </div>
-            </div>
-
-
-        </div>
-
-
-        <div class="contact__order contact__btn-box">
-            <div class="contact__error"></div>
-            <btn class="contact__btn" id="contact__btn">送信する</btn>
-        </div>
-        <!-- /.order__result -->
+            <!-- /.order__result -->
         </div>
     </form>
 </section>
-
 
 
 <!--ニュース-->
@@ -1807,65 +1843,132 @@
         <p class="news__sub notification__title">お知らせ</p>
         <div class="notification__main js-accordion">
 
+            <div class="notification__main__content">
+                <dl class="news__items">
+                    <dt class="news__day">2022/07/30</dt>
+                    <dd><a class="news__text" href="#">お知らせの内容が入ります。ダミーテキストです。お知らせの内容が入ります。ダミーテキストです。</a></dd>
+                </dl>
+            </div>
+            <div class="notification__main__content">
+                <dl class="news__items">
+                    <dt class="news__day">2022/07/30</dt>
+                    <dd><a href="#" class="news__text">お知らせの内容が入ります。ダミーテキストです。お知らせの内容が入ります。ダミーテキストです。</a></dd>
+                </dl>
+            </div>
+
+            <div class="notification__main__content">
+                <dl class="news__items">
+                    <dt class="news__day">2022/07/30</dt>
+                    <dd><a href="#" class="news__text">お知らせの内容が入ります。ダミーテキストです。お知らせの内容が入ります。ダミーテキストです。</a></dd>
+                </dl>
+            </div>
+
             <div class="notification__main__content" style="">
-        <dl class="news__items">
-            <dt class="news__day">2022/07/30</dt>
-            <dd><a class="news__text" href="#">お知らせの内容が入ります。ダミーテキストです。お知らせの内容が入ります。ダミーテキストです。</a></dd>
-        </dl>
+                <dl class="news__items">
+                    <dt class="news__day">2022/07/30</dt>
+                    <dd><a href="#" class="news__text">お知らせの内容が入ります。ダミーテキストです。お知らせの内容が入ります。ダミーテキストです。</a></dd>
+                </dl>
+            </div>
+
+            <div class="notification__main__content" style="">
+                <dl class="news__items">
+                    <dt class="news__day">2022/07/30</dt>
+                    <dd><a href="#" class="news__text">お知らせの内容が入ります。ダミーテキストです。お知らせの内容が入ります。ダミーテキストです。</a></dd>
+                </dl>
+            </div>
+
+            <div class="notification__main__content" style="">
+                <dl class="news__items">
+                    <dt class="news__day">2022/07/30</dt>
+                    <dd><a href="#" class="news__text">お知らせの内容が入ります。ダミーテキストです。お知らせの内容が入ります。ダミーテキストです。</a></dd>
+                </dl>
+            </div>
+
+            <div class="notification__main__content" style="">
+                <dl class="news__items">
+                    <dt class="news__day">2022/07/30</dt>
+                    <dd><a href="#" class="news__text">お知らせの内容が入ります。ダミーテキストです。お知らせの内容が入ります。ダミーテキストです。</a></dd>
+                </dl>
+            </div>
+
+            <div class="notification__main__content" style="">
+                <dl class="news__items">
+                    <dt class="news__day">2022/07/30</dt>
+                    <dd><a href="#" class="news__text">お知らせの内容が入ります。ダミーテキストです。お知らせの内容が入ります。ダミーテキストです。</a></dd>
+                </dl>
+            </div>
+            <div class="notification__main__content" style="">
+                <dl class="news__items">
+                    <dt class="news__day">2022/07/30</dt>
+                    <dd><a href="#" class="news__text">お知らせの内容が入ります。ダミーテキストです。お知らせの内容が入ります。ダミーテキストです。</a></dd>
+                </dl>
+            </div>
+            <div class="notification__main__content" style="">
+                <dl class="news__items">
+                    <dt class="news__day">2022/07/30</dt>
+                    <dd><a href="#" class="news__text">お知らせの内容が入ります。ダミーテキストです。お知らせの内容が入ります。ダミーテキストです。</a></dd>
+                </dl>
+            </div>
+            <div class="notification__main__content" style="">
+                <dl class="news__items">
+                    <dt class="news__day">2022/07/30</dt>
+                    <dd><a href="#" class="news__text">お知らせの内容が入ります。ダミーテキストです。お知らせの内容が入ります。ダミーテキストです。</a></dd>
+                </dl>
+            </div>
+            <div class="notification__main__content" style="">
+                <dl class="news__items">
+                    <dt class="news__day">2022/07/30</dt>
+                    <dd><a href="#" class="news__text">お知らせの内容が入ります。ダミーテキストです。お知らせの内容が入ります。ダミーテキストです。</a></dd>
+                </dl>
+            </div>
+            <div class="notification__main__content" style="">
+                <dl class="news__items">
+                    <dt class="news__day">2022/07/30</dt>
+                    <dd><a href="#" class="news__text">お知らせの内容が入ります。ダミーテキストです。お知らせの内容が入ります。ダミーテキストです。</a></dd>
+                </dl>
+            </div>
+            <div class="notification__main__content" style="">
+                <dl class="news__items">
+                    <dt class="news__day">2022/07/30</dt>
+                    <dd><a href="#" class="news__text">お知らせの内容が入ります。ダミーテキストです。お知らせの内容が入ります。ダミーテキストです。</a></dd>
+                </dl>
+            </div>
+            <div class="notification__main__content" style="">
+                <dl class="news__items">
+                    <dt class="news__day">2022/07/30</dt>
+                    <dd><a href="#" class="news__text">お知らせの内容が入ります。ダミーテキストです。お知らせの内容が入ります。ダミーテキストです。</a></dd>
+                </dl>
+            </div>
+            <div class="notification__main__content" style="">
+                <dl class="news__items">
+                    <dt class="news__day">2022/07/30</dt>
+                    <dd><a href="#" class="news__text">お知らせの内容が入ります。ダミーテキストです。お知らせの内容が入ります。ダミーテキストです。</a></dd>
+                </dl>
+            </div>
+            <div class="notification__main__content" style="">
+                <dl class="news__items">
+                    <dt class="news__day">2022/07/30</dt>
+                    <dd><a href="#" class="news__text">お知らせの内容が入ります。ダミーテキストです。お知らせの内容が入ります。ダミーテキストです。</a></dd>
+                </dl>
+            </div>
+            <div class="notification__main__content" style="">
+                <dl class="news__items">
+                    <dt class="news__day">2022/07/30</dt>
+                    <dd><a href="#" class="news__text">お知らせの内容が入ります。ダミーテキストです。お知らせの内容が入ります。ダミーテキストです。</a></dd>
+                </dl>
+            </div>
+            <div class="notification__main__content" style="">
+                <dl class="news__items">
+                    <dt class="news__day">2022/07/30</dt>
+                    <dd><a href="#" class="news__text">お知らせの内容が入ります。ダミーテキストです。お知らせの内容が入ります。ダミーテキストです。</a></dd>
+                </dl>
+            </div>
+
+
+            <div class="news__more news__btn js-btn-more" style="display: none;">もっと見る</div>
+
         </div>
-        <div class="notification__main__content" style="">
-        <dl class="news__items">
-            <dt class="news__day">2022/07/30</dt>
-           <dd> <a href="#" class="news__text">お知らせの内容が入ります。ダミーテキストです。お知らせの内容が入ります。ダミーテキストです。</a></dd>
-        </dl>
-        </div>
-
-        <div class="notification__main__content" style="">
-        <dl class="news__items">
-            <dt class="news__day">2022/07/30</dt>
-           <dd> <a href="#" class="news__text">お知らせの内容が入ります。ダミーテキストです。お知らせの内容が入ります。ダミーテキストです。</a></dd>
-        </dl>
-</div>
-
-<div class="notification__main__content" style="">
-    <dl class="news__items">
-        <dt class="news__day">2022/07/30</dt>
-       <dd> <a href="#" class="news__text">お知らせの内容が入ります。ダミーテキストです。お知らせの内容が入ります。ダミーテキストです。</a></dd>
-    </dl>
-</div>
-
-<div class="notification__main__content" style="">
-    <dl class="news__items">
-        <dt class="news__day">2022/07/30</dt>
-       <dd> <a href="#" class="news__text">お知らせの内容が入ります。ダミーテキストです。お知らせの内容が入ります。ダミーテキストです。</a></dd>
-    </dl>
-</div>
-
-<div class="notification__main__content" style="">
-    <dl class="news__items">
-        <dt class="news__day">2022/07/30</dt>
-       <dd> <a href="#" class="news__text">お知らせの内容が入ります。ダミーテキストです。お知らせの内容が入ります。ダミーテキストです。</a></dd>
-    </dl>
-</div>
-
-<div class="notification__main__content" style="">
-    <dl class="news__items">
-        <dt class="news__day">2022/07/30</dt>
-       <dd> <a href="#" class="news__text">お知らせの内容が入ります。ダミーテキストです。お知らせの内容が入ります。ダミーテキストです。</a></dd>
-    </dl>
-</div>
-
-<div class="notification__main__content" style="">
-    <dl class="news__items">
-        <dt class="news__day">2022/07/30</dt>
-       <dd> <a href="#" class="news__text">お知らせの内容が入ります。ダミーテキストです。お知らせの内容が入ります。ダミーテキストです。</a></dd>
-    </dl>
-</div>
-
-    <div class="news__btn">
-        <div class="news__more btn js-btn-more" style="display: none;">もっと見る</div></div>
-</div>
-</div>
+    </div>
 </section>
 
 <footer class="footer container">
@@ -1892,17 +1995,17 @@
 
         <li class="footer__sns-item">
 
-                <a href="" class="footer__sns-link">
-                    <figure class="footer__sns-img">
-                        <img src="/assets/img/sns2@2x.png" alt="インスタグラム">
-            </figure>
-                </a>
+            <a href="" class="footer__sns-link">
+                <figure class="footer__sns-img">
+                    <img src="/assets/img/sns2@2x.png" alt="インスタグラム">
+                </figure>
+            </a>
         </li>
         <li class="footer__sns-item">
 
             <a href="/" class="footer__sns-link">
                 <figure class="footer__sns-img">
-                <img src="/assets/img/sns3@2x.png" alt="ティックトック">
+                    <img src="/assets/img/sns3@2x.png" alt="ティックトック">
                 </figure>
             </a>
         </li>

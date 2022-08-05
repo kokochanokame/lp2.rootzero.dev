@@ -7,7 +7,10 @@
   @include mq(pc) {
 	padding-top: 4vw;
 	padding-bottom: 4.5vw;
-	
+  }
+  @include mq(lpc) {
+	padding-top: 48px;
+	padding-bottom: 54px;
   }
   
   &__top {
@@ -22,6 +25,10 @@
 	@include mq(pc) {
 	  padding: 0 vw($pc-width, 38);
 	  font-size: vw($pc-width, 30);
+	}
+	@include mq(lpc) {
+	  padding: 0 38px;
+	  font-size: 30px;
 	}
 	
 	&::before {
@@ -38,6 +45,10 @@
 		width: vw($sp-width, 31);
 		height: vw($sp-width, 31);
 	  }
+	  @include mq(lpc) {
+		width: 31px;
+		height: 31px;
+	  }
 	}
 	
 	&::after {
@@ -53,6 +64,10 @@
 	  @include mq(pc) {
 		width: vw($sp-width, 31);
 		height: vw($sp-width, 31);
+	  }
+	  @include mq(lpc) {
+		width: 31px;
+		height: 31px;
 	  }
 	}
   }
@@ -99,6 +114,10 @@
 	  width: vw($pc-width, 310);
 	  height: vw($pc-width, 200);
 	}
+	@include mq(lpc) {
+	  width: 310px;
+	  height: 200px;
+	}
 	
 	&::before {
 	  content: '';
@@ -113,6 +132,12 @@
 		left: vw($pc-width, 17);
 		top: vw($pc-width, -44);
 	  }
+	  @include mq(lpc) {
+		width: 96px;
+		height: 77px;
+		left: 17px;
+		top: -44px;
+	  }
 	}
   }
   
@@ -126,17 +151,24 @@
 	  margin-bottom: vw($pc-width, 16);
 	  font-size: vw($pc-width, 22);
 	}
+	@include mq(lpc) {
+	  margin-top: 31px;
+	  margin-bottom:  16px;
+	  font-size:  22px;
+	}
   }
   
   &__desc-text {
 	margin-top: vw($sp-width, 10);
 	font-size: vw($sp-width, 26);
-	font-family: "YuGothic";
 	color: rgb(0, 0, 0);
 	line-height: 1.385;
 	@include mq(pc) {
 	  margin-top: 0;
 	  font-size: vw($pc-width, 18);
+	}
+	@include mq(lpc) {
+	  font-size:18px;
 	}
   }
 }
@@ -164,6 +196,11 @@
 	height: vw($pc-width, 28);
 	transform: rotate(-90deg);
   }
+  @include mq(lpc) {
+	right: -27px;
+	width: 14px;
+	height: 28px;
+  }
 }
 
 .step2::before {
@@ -189,6 +226,12 @@
 	height: vw($pc-width, 28);
 	transform: rotate(-90deg);
   }
+  @include mq(pc) {
+	right:-27px;
+	width: 14px;
+	height: 28px;
+	  }
+  
 }
 
 .step3::before {

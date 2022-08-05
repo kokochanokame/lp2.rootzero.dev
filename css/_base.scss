@@ -14,36 +14,6 @@ body {
 
 }
 
-button {
-  appearance: auto;
-  writing-mode: horizontal-tb !important;
-  font-style: ;
-  font-variant-ligatures: ;
-  font-variant-caps: ;
-  font-variant-numeric: ;
-  font-variant-east-asian: ;
-  font-weight: ;
-  font-stretch: ;
-  font-size: ;
-  font-family: ;
-  text-rendering: auto;
-  color: buttontext;
-  letter-spacing: normal;
-  word-spacing: normal;
-  line-height: normal;
-  text-transform: none;
-  text-indent: 0px;
-  text-shadow: none;
-  display: inline-block;
-  text-align: center;
-  align-items: flex-start;
-  cursor: default;
-  box-sizing: border-box;
-  background-color: buttonface;
-  margin: 0em;
-  padding: 1px 6px;
-border: none!important;
-}
 
 //animate
 .animate__animated {
@@ -78,14 +48,17 @@ a {
 table {
   border-collapse: separate;
   text-indent: initial;
-  border-spacing: 0px;
+  border-spacing: 0;
 }
 
 .container {
   margin: 0 auto;
   width: vw($sp-width, 660);
   @include mq(pc) {
-	width: vw(1366, 1140);
+	width: vw($pc-width, 1020);
+  }
+  @include mq(lpc) {
+    width: 1020px!important;
   }
 }
 
@@ -115,6 +88,9 @@ table {
     font-size:vw($pc-width, 46);
     line-height: 1.666;
   }
+  @include mq(lpc) {
+    font-size:46px;
+  }
 }
 
 .section__sub-title {
@@ -126,6 +102,9 @@ table {
   text-align: center;
   @include mq(pc) {
     font-size: vw($pc-width, 26);
+  }
+  @include mq(lpc) {
+    font-size: 26px;
   }
 }
 
@@ -161,4 +140,10 @@ table {
   color: #5b80b2;
 }
 
+.content {
+  @include mq(lpc) {
+    width: 1200px!important;
+    margin: 0 auto;
+  }
+}
 

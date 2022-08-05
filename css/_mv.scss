@@ -10,14 +10,21 @@
 	padding-top: vw($pc-width, 130);
 	height: vw($pc-width, 681);
 	background-image: url(/assets/img/mv@2x.jpg);
-  
   }
+  @include mq(lpc) {
+	padding-top: 130px;
+	height: 681px;
+	background-position: top center;
+  }
+
   
   &__top-image {
 	margin-left: vw($sp-width, -35);
 	@include mq(pc) {
 	  margin-left: vw($pc-width, -35);
-	}
+	}@include mq(lpc) {
+	   margin-left: -35px;
+	 }
   }
   
   
@@ -27,6 +34,10 @@
 	@include mq(pc) {
 	  width: vw($pc-width, 516);
 	  height: 11vw;
+	}
+	@include mq(lpc) {
+	  width: 516px;
+	  height: 132px;
 	}
   }
   
@@ -38,6 +49,11 @@
 	  margin-top: vw($pc-width, 36);
 	  width: vw($pc-width, 577);
 	}
+	@include mq(lpc) {
+	  margin-top: 36px;
+	  width:  577px;
+	}
+	
   }
   
   &__text {
@@ -50,6 +66,9 @@
 	  font-size:vw($pc-width, 24);
 		line-height: 1.75;
 	}
+	@include mq(pc) {
+	  font-size: 24px;
+	}
   }
   
   &__title {
@@ -60,6 +79,11 @@
 	  margin-top: vw($pc-width, 50);
 	  width: vw($pc-width, 572);
 	  height: vw($pc-width, 153);
+	}
+	@include mq(lpc) {
+	  margin-top: 50px;
+	  width:  572px;
+	  height:  153px;
 	}
   }
 }

@@ -5,6 +5,10 @@
 	padding-top: 3vw;
 	padding-bottom: vw($pc-width, 82);
   }
+  @include mq(lpc) {
+	padding-top: 36px;
+	padding-bottom: 82px;
+  }
   
   &__title {
 	font-size: vw($sp-width, 50);
@@ -13,6 +17,9 @@
 	text-align: left;
 	@include mq(pc) {
 	  font-size: vw($pc-width, 40);
+	}
+	@include mq(lpc) {
+	  font-size: 40px;
 	}
   }
   
@@ -25,6 +32,9 @@
 	@include mq(pc) {
 	  font-size: vw($pc-width, 18);
 	}
+	@include mq(lpc) {
+	  font-size: 18px;
+	}
   }
   
   &__items {
@@ -34,6 +44,12 @@
 	  display: flex;
 	  align-items: center;
 	  gap: vw($pc-width, 30);
+	}
+	@include mq(lpc) {
+	  margin-top: 18px;
+	  display: flex;
+	  align-items: center;
+	  gap: 30px;
 	}
   }
   
@@ -45,6 +61,9 @@
 	text-align: left;
 	@include mq(pc) {
 	  font-size: vw($pc-width, 18);
+	}
+	@include mq(lpc) {
+	  font-size: 18px;
 	}
   }
   
@@ -58,6 +77,9 @@
 	@include mq(pc) {
 	  font-size: vw($pc-width, 16);
 	}
+	@include mq(lpc) {
+	  font-size: 16px;
+	}
   }
   
   &__btn {
@@ -68,43 +90,58 @@
 	@include mq(pc) {
 	  margin-top: vw($sp-width, 38);
 	}
+	@include mq(lpc) {
+	  margin-top: 38px;
+	}
   }
   
   &__more {
-	display: inline-block;
+	margin: 0 auto;
+	display: block;
 	font-size: vw($sp-width, 28);
-	color: rgb(124, 111, 123);
+	color: #7c6f7b;
 	font-weight: bold;
 	line-height: 6.2vw;
 	text-align: center;
-	border: 1px solid #cbc4ca;
+	border: 1px solid #7c6f7b;
 	border-radius: 34px;
 	width: vw($sp-width, 318);
 	height: 6.2vw;
 	position: relative;
 	@include mq(pc) {
-	  margin: -2vw 0;
+	  margin-top: 35px;
 	  font-size: vw($pc-width, 16);
 	  line-height: vw($pc-width, 47);
 	  width: vw($pc-width, 190);
 	  height: vw($pc-width, 47);
 	}
-	  &::after {
-		content: "";
-		position: absolute;
-		width: vw($sp-width, 19);
-		height: vw($sp-width, 12);
-		top: 50%;
-		transform: translateY(-50%);
-		right: vw($sp-width, 60);
-		background: url("/assets/img/arrow_bottom@2x.png") center center no-repeat;
-		background-size: contain;
-		@include mq(pc) {
-		  width: vw($pc-width, 10);
-		  height: vw($pc-width, 7);
-		  right: vw($pc-width, 42);
-		}
+	@include mq(lpc) {
+	  font-size: 16px;
+	  line-height: 47px;
+	  width: 190px;
+	  height: 47px;
+	}
+	
+	&::after {
+	  content: "";
+	  position: absolute;
+	  width: vw($sp-width, 19);
+	  height: vw($sp-width, 12);
+	  top: 50%;
+	  transform: translateY(-50%);
+	  right: vw($sp-width, 60);
+	  background: url("/assets/img/arrow_bottom@2x.png") center center no-repeat;
+	  background-size: contain;
+	  @include mq(pc) {
+		width: vw($pc-width, 10);
+		height: vw($pc-width, 7);
+		right: vw($pc-width, 42);
 	  }
+	  @include mq(lpc) {
+		width: 10px;
+		height: 7px;
+		right: 42px;
+	  }
+	}
   }
-  
 }

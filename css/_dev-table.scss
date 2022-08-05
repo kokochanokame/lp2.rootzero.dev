@@ -6,8 +6,10 @@
   width: 100%;
   table-layout: fixed;
   @include mq(pc) {
-	
 	width: vw($pc-width, 963);
+  }
+  @include mq(lpc) {
+	width: 963px;
   }
   
   
@@ -23,6 +25,9 @@
 	@include mq(pc) {
 	  width: vw($pc-width, 148);
 	}
+	@include mq(lpc) {
+	  width: 148px;
+	}
   }
   
   &__main {
@@ -32,6 +37,9 @@
 	background-color: rgb(255, 222, 192);
 	@include mq(pc) {
 	  padding: vw($pc-width, 20) vw($pc-width, 45);
+	}
+	@include mq(lpc) {
+	  padding: 20px 45px;
 	}
   }
   
@@ -49,6 +57,10 @@
 	  padding: vw($pc-width, 77) 0 vw($pc-width, 24);
 	  font-size: vw($pc-width, 20);
 	}
+	@include mq(lpc) {
+	  padding: 77px 0  24px;
+	  font-size: 20px;
+	}
 	
 	&::before {
 	  content: "";
@@ -65,6 +77,11 @@
 		width: vw($pc-width, 40);
 		height: vw($pc-width, 40);
 	  }
+	  @include mq(lpc) {
+		top: 24px;
+		width: 40px;
+		height: 40px;
+	  }
 	}
   }
   
@@ -72,6 +89,9 @@
 	font-size: vw($sp-width, 38);
 	@include mq(pc) {
 	  font-size: vw($pc-width, 36);
+	}
+	@include mq(lpc) {
+	  font-size: 36px;
 	}
   }
   
@@ -81,6 +101,10 @@
 	@include mq(pc) {
 	  width: vw($pc-width, 170);
 	  height: vw($pc-width, 50);
+	}
+	@include mq(lpc) {
+	  width: 170px;
+	  height: 50px;
 	}
   }
   
@@ -104,6 +128,9 @@
 	@include mq(pc) {
 	  font-size: vw($pc-width, 20);
 	}
+	@include mq(lpc) {
+	  font-size: 20px;
+	}
   }
   
   &__th-sub {
@@ -126,9 +153,13 @@
 	text-align: center;
 	height: vw($sp-width, 100);
 	@include mq(pc) {
-	  height: vw($pc-width, 93
-	  );
+	  height: vw($pc-width, 93);
 	  font-size: vw($pc-width, 24);
+	}
+	@include mq(lpc) {
+	  margin-top: 136px;
+	  height: 93px;
+	  font-size: 24px;
 	}
   }
   
@@ -146,6 +177,10 @@
 	  padding: vw($pc-width, 77) 0 vw($pc-width, 24);
 	  font-size: vw($pc-width, 20);
 	}
+	@include mq(lpc) {
+	  padding: 77px 0 24px;
+	  font-size: 20px;
+	}
 	
 	&::before {
 	  content: "";
@@ -161,6 +196,11 @@
 		width: vw($pc-width, 40);
 		height: vw($pc-width, 40);
 	  }
+	  @include mq(lpc) {
+		top: 24px;
+		width: 40px;
+		height: 40px;
+	  }
 	}
   }
   
@@ -169,6 +209,9 @@
 	@include mq(pc) {
 	  font-size: vw($pc-width, 30);
 	}
+	@include mq(lpc) {
+	  font-size: 30px;
+	}
   }
   
   &__span {
@@ -176,8 +219,10 @@
 	@include mq(pc) {
 	  font-size: vw($pc-width, 21);
 	}
+	@include mq(lpc) {
+	  font-size: 21px;
+	}
   }
-  
 }
 
 .t-center {
@@ -189,6 +234,13 @@
   @include mq(pc) {
 	margin-top: 2.7vw;
 	height: vw($pc-width, 132);
+  }
+  @include mq(lpc) {
+	margin-top: 100px;
+	height: 132px;
+  }
+  @include mq(xpc) {
+	margin-top: 110px;
   }
 }
 

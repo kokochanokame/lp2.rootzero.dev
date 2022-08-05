@@ -4,6 +4,9 @@
   @include mq(pc) {
     padding: 6vw 0;
   }
+  @include mq(lpc) {
+    padding: 72px 0;
+  }
   
   &__section {
     margin-top: vw($sp-width, 34);
@@ -15,14 +18,24 @@
       margin-top: vw($pc-width, 44);
       width: vw($pc-width, 907);
     }
+    @include mq(lpc) {
+      margin-top: 44px;
+      width:907px;
+    }
   }
   
-  &__wrapper {}
+  &__wrapper {
+    display: block;
+    margin: 0 auto;
+  }
 &__item {
   & + & {
     margin-top: vw($sp-width, 22);
     @include mq(pc) {
       margin-top: vw($pc-width, 22);
+    }
+    @include mq(lpc) {
+      margin-top: 22px;
     }
   }
 }
@@ -40,7 +53,13 @@
     padding: vw($pc-width, 20) vw($pc-width, 68);
     font-size: vw($pc-width, 20);
     letter-spacing: -0.9px;
-  
+    max-width: 906px;
+  margin: 0 auto;
+  }
+  @include mq(lpc) {
+    padding:  20px 68px;
+    font-size: 20px;
+    width: 906px;
   }
   &::before {
     content: "";
@@ -56,6 +75,12 @@
       height: vw($pc-width, 27);
       left: vw($pc-width, 22);
       top: vw($pc-width, 21);
+    }
+    @include mq(lpc) {
+      width: 27px;
+      height: 27px;
+      left: 22px;
+      top: 21px;
     }
   }
   &::after {
@@ -73,10 +98,14 @@
       height: vw($pc-width, 17);
       right: vw($pc-width, 22);
     }
+    @include mq(lpc) {
+      width: 17px;
+      height: 17px;
+      right: 22px;
+    }
   }
 }
   &__anser {
-
     display: none;
   }
   
@@ -90,6 +119,13 @@
     @include mq(pc) {
       padding: vw($pc-width, 20) vw($pc-width, 68);
       font-size: vw($pc-width, 18);
+      max-width: 906px;
+      margin: 0 auto;
+    }
+    @include mq(lpc) {
+      padding: 20px 68px;
+      font-size: 18px;
+      width: 906px;
     }
 
     &::before {
@@ -106,6 +142,12 @@
         height: vw($pc-width, 27);
         left: vw($pc-width, 22);
         top: vw($pc-width, 21);
+      }
+      @include mq(lpc) {
+        width: 27px;
+        height: 27px;
+        left: 22px;
+        top: 21px;
       }
     }
   }

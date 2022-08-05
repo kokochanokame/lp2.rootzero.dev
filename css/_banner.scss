@@ -18,6 +18,13 @@
 	width: vw($pc-width, 760);
 	height: vw($pc-width, 224);
   }
+  @include mq(lpc) {
+	margin-top:  -90px;
+	padding-top:  20px;
+	padding-bottom: 28px;
+	width: 760px;
+	height: 224px;
+  }
   
   &__top {
 	padding: vw($sp-width, 5) vw($sp-width, 51);
@@ -31,6 +38,11 @@
 	@include mq(pc) {
 	  padding: vw($pc-width, 5) vw($pc-width, 45);
 	  font-size: vw($pc-width, 22);
+	  line-height: 1.182;
+	}
+	@include mq(lpc) {
+	  padding: 5px 45px;
+	  font-size: 22px;
 	  line-height: 1.182;
 	}
   }
@@ -48,6 +60,10 @@
 	  font-size: vw($pc-width, 32);
 	  line-height: 0.813;
 	}
+	@include mq(lpc) {
+	  margin-top: 8px;
+	  font-size: 32px;
+	}
   }
   
   &__sub {
@@ -61,6 +77,10 @@
 	  margin-top: vw($pc-width, 8);
 	  font-size: vw($pc-width, 16);
 	  line-height: 1.2;
+	}
+	@include mq(lpc) {
+	  margin-top: 8px;
+	  font-size:  16px;
 	}
   }
   
@@ -84,6 +104,12 @@
 	  margin-top: vw($pc-width, 14);
 	  padding: vw($pc-width, 9) vw($pc-width, 37);
 	  font-size: vw($pc-width, 24);
+	}
+ 
+	@include mq(lpc) {
+	  margin-top: 14px;
+	  padding: 9px  37px;
+	  font-size: 24px;
 	}
   }
 }

@@ -26,14 +26,14 @@
 	@include mq(pc) {
 	  margin: 0;
 	  padding: 2vw vw($pc-width, 20) vw($pc-width, 43);
-	  width: vw($pc-width, 500);
+	  width: vw($pc-width, 502);
 	  height: 117vw;
-	  max-width: 48%;
 	}
-  }
-  
-  &__inner {
-	
+	@include mq(lpc) {
+	  padding: 24px 20px 43px;
+	  width: 500px;
+	  height: 1430px;
+	}
   }
   
   &__card-title {
@@ -47,7 +47,9 @@
 	@include mq(pc) {
 	  font-size: vw($pc-width, 22);
 	}
-	
+	@include mq(lpc) {
+	  font-size: 22px;
+	}
   }
   
   &__course {
@@ -67,8 +69,15 @@
 	  max-width: vw($pc-width, 448);
 	  height: vw($pc-width, 44);
 	  font-size: vw($pc-width, 30);
-	  font-family: "YuGothic", serif;
 	  line-height: vw($pc-width, 44);
+	}
+	@include mq(lpc) {
+	  margin-top: 16px;
+	  margin-bottom: 30px;
+	  max-width: 448px;
+	  height: 44px;
+	  font-size: 30px;
+	  line-height:44px;
 	}
   }
   
@@ -89,6 +98,11 @@
 		height: vw($pc-width, 40);
 		left: vw($pc-width, 11);
 	  }
+	  @include mq(lpc) {
+		width:  87px;
+		height:  40px;
+		left:  11px;
+	  }
 	}
   }
   
@@ -101,6 +115,9 @@
 	@include mq(pc) {
 	  font-size: vw($pc-width, 20);
 	}
+	@include mq(lpc) {
+	  font-size: 20px;
+	}
   }
   
   &__card-price {
@@ -109,9 +126,12 @@
 	font-weight: bold;
 	line-height: 1.429;
 	text-align: center;
-	letter-spacing: -1px;
+	letter-spacing: -2px;
 	@include mq(pc) {
 	  font-size: vw($pc-width, 28);
+	}
+	@include mq(lpc) {
+	  font-size: 28px;
 	}
   }
   
@@ -119,6 +139,9 @@
 	font-size: vw($sp-width, 81);
 	@include mq(pc) {
 	  font-size: vw($pc-width, 60);
+	}
+	@include mq(lpc) {
+	  font-size: 60px;
 	}
   }
   
@@ -134,6 +157,9 @@
 	font-size: vw($sp-width, 27);
 	@include mq(pc) {
 	  font-size: vw($pc-width, 20);
+	}
+	@include mq(lpc) {
+	  font-size: 20px;
 	}
   }
   
@@ -166,6 +192,9 @@
 	@include mq(pc) {
 	  gap: vw($pc-width, 58);
 	}
+	@include mq(lpc) {
+	  gap: 58px;
+	}
   }
   
   
@@ -177,6 +206,9 @@
 	@include mq(pc) {
 	  font-size: vw($pc-width, 18);
 	}
+	@include mq(lpc) {
+	  font-size: 18px;
+	}
   }
   
   &__item-data {
@@ -185,6 +217,9 @@
 	line-height: 2.094;
 	@include mq(pc) {
 	  font-size: vw($pc-width, 18);
+	}
+	@include mq(lpc) {
+	  font-size: 18px;
 	}
   }
   
@@ -195,6 +230,9 @@
 	gap: vw($sp-width, 10);
 	@include mq(pc) {
 	  gap: vw($pc-width, 10);
+	}
+	@include mq(lpc) {
+	  gap: 10px;
 	}
   }
   
@@ -209,10 +247,16 @@
 	@include mq(pc) {
 	  font-size: vw($pc-width, 18);
 	}
+	@include mq(lpc) {
+	  font-size: 18px;
+	}
   }
   &__content-items {
 	@include mq(pc){
 	width: vw($pc-width, 340);
+	}
+	@include mq(lpc){
+	  width: 340px;
 	}
   }
   &__content-item {
@@ -226,6 +270,10 @@
 	  font-size: vw($pc-width, 18);
 	  line-height: 1.6;
 	}
+	@include mq(lpc) {
+	padding-left: 16px;
+	font-size:  18px;
+  }
 	
 	&::before {
 	  content: "";
@@ -239,6 +287,11 @@
 		top: 1vw;
 		width: vw($pc-width, 8);
 		height: vw($pc-width, 8);
+	  }
+	  @include mq(lpc) {
+		top: 1vw;
+		width: 8px;
+		height: 8px;
 	  }
 	}
   }
@@ -265,12 +318,19 @@
 	  font-size: vw($pc-width, 24);
 	  line-height: 1.6;
 	}
+	@include mq(lpc) {
+	  padding: 0;
+	  font-size: 24px;
+	}
   }
   
   &__flow.short-text {
 	border: 1px solid #ff9635;
 	@include mq(pc) {
 	  margin-top: 7vw;
+	}
+	@include mq(lpc) {
+	  margin-top: 84px;
 	}
   }
   
@@ -291,6 +351,11 @@
 	  width: vw($pc-width, 82);
 	  font-size: vw($pc-width, 18);
 	}
+	@include mq(lpc) {
+	  padding:  12px;
+	  width:  82px;
+	  font-size:  18px;
+	}
   }
   
   &__flow-td {
@@ -302,6 +367,10 @@
 	@include mq(pc) {
 	  padding: vw($pc-width, 12) 0;
 	  font-size: vw($pc-width, 18);
+	}
+	@include mq(lpc) {
+	  padding: 12px 0;
+	  font-size: 18px;
 	}
   }
 }

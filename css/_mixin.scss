@@ -1,5 +1,7 @@
 //media
 $breakpoints: (
+		"xpc": "screen and (min-width: 1790px)",
+		"lpc": "screen and (min-width: 1200px)",
 		"pc": "screen and (min-width: 768px)",
 		"sp": "screen and (max-width: 767px)",
 );

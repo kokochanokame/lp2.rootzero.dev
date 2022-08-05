@@ -3,11 +3,17 @@
   @include mq(pc) {
 	padding: vw($pc-width, 60) 0 vw($pc-width, 82);
   }
+  @include mq(lpc) {
+	padding: 60px 0 82px;
+  }
   
   &__wrapper {
 	@include mq(pc) {
 	  width: 63vw;
 	  margin: 0 auto;
+	}
+	@include mq(lpc) {
+	  width: 765px;
 	}
   }
   
@@ -15,6 +21,9 @@
 	margin-top: vw($sp-width, 47);
 	@include mq(pc) {
 	  margin-top: vw($pc-width, 38);
+	}
+	@include mq(lpc) {
+	  margin-top: 38px;
 	}
   }
   
@@ -27,6 +36,10 @@
 	  gap: vw($pc-width, 22);
 	  margin-top: vw($pc-width, 20);
 	}
+	@include mq(lpc) {
+	  gap: 22px;
+	  margin-top: 20px;
+	}
   }
   
   &__label-group {
@@ -37,6 +50,10 @@
 	  gap: 0;
 	  justify-content: space-between;
 	  width: vw($pc-width, 208);
+	}
+	@include mq(lpc) {
+	  gap: 0;
+	  width: 208px;
 	}
   }
   
@@ -50,9 +67,13 @@
 	@include mq(pc) {
 	  font-size: vw($pc-width, 18);
 	}
+	@include mq(lpc) {
+	  font-size: 18px;
+	}
   }
   
   &__required {
+	white-space: nowrap;
 	padding: 0 vw($sp-width, 14);
 	font-size: vw($sp-width, 24);
 	color: rgb(255, 113, 101);
@@ -62,12 +83,14 @@
 	border-radius: 4px;
 	line-height: 1.2;
 	@include mq(pc) {
-	  
 	  font-size: vw($pc-width, 15);
 	  padding: 0 vw($sp-width, 10);
 	}
+	@include mq(lpc) {
+	  font-size: 15px;
+	  padding: 0 10px;
+	}
   }
-  
   &__input {
 	cursor: pointer;
 	padding-left: vw($sp-width, 28);
@@ -83,14 +106,22 @@
 	  width: vw($pc-width, 522);
 	  height: vw($pc-width, 44);
 	}
+	@include mq(lpc) {
+	  margin-top: 0;
+	  padding-left: 18px;
+	  width: 522px;
+	  height: 44px;
+	}
 	
 	&::placeholder {
 	  font-size: vw($sp-width, 26);
 	  color: rgba(0, 0, 0, 0.502);
 	  text-align: left;
 	  @include mq(pc) {
-		
 		font-size: vw($pc-width, 16);
+	  }
+	  @include mq(lpc) {
+		font-size: 16px;
 	  }
 	}
   }
@@ -112,6 +143,10 @@
 	@include mq(pc) {
 	  margin-bottom: 0;
 	  font-size: vw($pc-width, 18);
+	}
+	@include mq(lpc) {
+	  margin-bottom: 0;
+	  font-size: 18px;
 	}
   }
   
@@ -135,6 +170,10 @@
 	  width: vw($pc-width, 22);
 	  height: vw($pc-width, 22);
 	}
+	@include mq(lpc) {
+	  width: 22px;
+	  height: 22px;
+	}
   }
   
   &__input-textarea {
@@ -152,14 +191,22 @@
 	  width: 70%;
 	  height: vw($pc-width, 167);
 	}
+	@include mq(lpc) {
+	  padding: 18px;
+	  margin-top: 0vw;
+	  width: 70%;
+	  height: 167px;
+	}
 	
 	&::placeholder {
 	  font-size: vw($sp-width, 26);
 	  color: rgba(0, 0, 0, 0.502);
 	  text-align: left;
 	  @include mq(pc) {
-		
 		font-size: vw($pc-width, 16);
+	  }
+	  @include mq(lpc) {
+		font-size: 16px;
 	  }
 	}
   }
@@ -174,6 +221,11 @@
 	  margin-top: 1vw;
 	  margin-bottom: vw($pc-width, 57);
 	}
+	@include mq(lpc) {
+	  font-size: 18px;
+	  margin-top: 12px;
+	  margin-bottom: 57px;
+	}
   }
   
   &__policy-link {
@@ -184,6 +236,9 @@
 	text-align: left;
 	@include mq(pc) {
 	  font-size: vw($pc-width, 18);
+	}
+	@include mq(lpc) {
+	  font-size: 18px;
 	}
   }
   
@@ -203,6 +258,12 @@
 	  width: 34vw;
 	  height: 5vw;
 	  line-height: 5vw;
+	}
+	@include mq(lpc) {
+	  font-size: 22px;
+	  width: 390px;
+	  height: 60px;
+	  line-height: 60px;
 	}
   }
   
